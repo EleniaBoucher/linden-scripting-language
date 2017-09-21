@@ -2,19 +2,25 @@
 
 ## Usage
 
-Download **Sublime Text**:
+Download **Sublime Text 3**:
 
-* [ST3 (stable)](https://www.sublimetext.com/3)
-* [ST3 (dev)](https://www.sublimetext.com/3dev)
+* [Sublime Text 3 (stable)](https://www.sublimetext.com/3)
+* [Sublime Text 3 (dev)](https://www.sublimetext.com/3dev)
 
-The contents of the [`LSL`](LSL) subfolder should be zipped, the zipfile renamed to `LSL.sublime-package` and dropped into `./Data/Installed Packages` where ST is installed.
+then:
 
-### ToolTips
+* open **Sublime Text 3**
+* choose `Preferences > Browse packages`from the menu
+* copy & paste the [`LSL`](LSL) subfolder
 
-Make sure you are running **Build 3124 or later**.
+### Tooltips
+
+Tooltips require **Build 3124 or later**.
 
 ### Linters
 
-Install the following package:
-
-* [`SublimeLinter/SublimeLinter3`](https://github.com/SublimeLinter/SublimeLinter3)
+* In **Sublime Text 3** open the command palette
+  * `Tools > Command palette` from the menu
+* If you haven't installed `Package Control` yet, choose `Install Package Control` from the command palette and restart **Sublime Text 3**.
+* Choose `Package Control: Install Package` from the command palette, then choose `SublimeLinter`
+  * [`github.com/SublimeLinter/SublimeLinter3`](https://github.com/SublimeLinter/SublimeLinter3)
