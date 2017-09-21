@@ -1,3 +1,5 @@
+[![Sublime Text minimum required version](https://img.shields.io/badge/Sublime%20Text-Build%203124+-orange.svg?style=flat-square)](https://www.sublimetext.com)
+
 ## Usage
 
 Download **Sublime Text**:
@@ -9,7 +11,7 @@ The contents of the [`LSL`](LSL) subfolder should be zipped, the zipfile renamed
 
 ### ToolTips
 
-Make sure you are running **Build 3080 or later**.
+Make sure you are running **Build 3124 or later**.
 
 ### Linters
 
