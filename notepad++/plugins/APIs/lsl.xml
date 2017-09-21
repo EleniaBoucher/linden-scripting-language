@@ -708,54 +708,54 @@
         <KeyWord name="ZERO_ROTATION" func="no" />
         <KeyWord name="ZERO_VECTOR" func="no" />
         <KeyWord name="at_rot_target" func="yes">
-            <Overload descr="Result of llRotTarget library function call.">
+            <Overload retVal="" descr="Result of llRotTarget library function call.">
                 <Param name="integer handle" />
                 <Param name="rotation targetrot" />
                 <Param name="rotation ourrot" />
             </Overload>
         </KeyWord>
         <KeyWord name="at_target" func="yes">
-            <Overload descr="Result of llTarget library function call.">
+            <Overload retVal="" descr="Result of llTarget library function call.">
                 <Param name="integer tnum" />
                 <Param name="vector targetpos" />
                 <Param name="vector ourpos" />
             </Overload>
         </KeyWord>
         <KeyWord name="attach" func="yes">
-            <Overload descr="Triggered in an object when the object attaches or detaches from agent.">
+            <Overload retVal="" descr="Triggered in an object when the object attaches or detaches from agent.">
                 <Param name="key id" />
             </Overload>
         </KeyWord>
         <KeyWord name="changed" func="yes">
-            <Overload descr="Various changes to the object/prim trigger this event.
+            <Overload retVal="" descr="Various changes to the object/prim trigger this event.
 Multiple changes can be represented in a single event, so use bit-wise arithmetic.">
                 <Param name="integer change" />
             </Overload>
         </KeyWord>
         <KeyWord name="collision" func="yes">
-            <Overload descr="Triggered while task is colliding with another task.">
+            <Overload retVal="" descr="Triggered while task is colliding with another task.">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="collision_end" func="yes">
-            <Overload descr="Triggered when task stops colliding with another task.">
+            <Overload retVal="" descr="Triggered when task stops colliding with another task.">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="collision_start" func="yes">
-            <Overload descr="Triggered when task starts colliding with another task.">
+            <Overload retVal="" descr="Triggered when task starts colliding with another task.">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="control" func="yes">
-            <Overload descr="Result of llTakeControls library function call and user input.">
+            <Overload retVal="" descr="Result of llTakeControls library function call and user input.">
                 <Param name="key id" />
                 <Param name="integer level" />
                 <Param name="integer edge" />
             </Overload>
         </KeyWord>
         <KeyWord name="dataserver" func="yes">
-            <Overload descr="Triggered when task receives asynchronous data.">
+            <Overload retVal="" descr="Triggered when task receives asynchronous data.">
                 <Param name="key query_id" />
                 <Param name="string data" />
             </Overload>
@@ -764,7 +764,7 @@ Multiple changes can be represented in a single event, so use bit-wise arithmeti
         <KeyWord name="do" />
         <KeyWord name="else" />
         <KeyWord name="email" func="yes">
-            <Overload descr="Triggered as a result of calling llGetNextEmail where there is a matching email in the email queue.">
+            <Overload retVal="" descr="Triggered as a result of calling llGetNextEmail where there is a matching email in the email queue.">
                 <Param name="string time" />
                 <Param name="string address" />
                 <Param name="string subject" />
@@ -773,12 +773,12 @@ Multiple changes can be represented in a single event, so use bit-wise arithmeti
             </Overload>
         </KeyWord>
         <KeyWord name="experience_permissions" func="yes">
-            <Overload descr="The agent with the key agent_id has approved an experience permissions request. This may be through interaction with the experience permission dialog or the experience profile, or automatically if the agent with the key agent_id has previously approved the experience.">
+            <Overload retVal="" descr="The agent with the key agent_id has approved an experience permissions request. This may be through interaction with the experience permission dialog or the experience profile, or automatically if the agent with the key agent_id has previously approved the experience.">
                 <Param name="key agent_id" />
             </Overload>
         </KeyWord>
         <KeyWord name="experience_permissions_denied" func="yes">
-            <Overload descr="The agent has denied experience permission.
+            <Overload retVal="" descr="The agent has denied experience permission.
 
 This event may be generated in many cases:
 
@@ -798,14 +798,14 @@ The experience can no longer run:
         <KeyWord name="float" />
         <KeyWord name="for" />
         <KeyWord name="http_request" func="yes">
-            <Overload descr="Triggered when task receives an HTTP request.">
+            <Overload retVal="" descr="Triggered when task receives an HTTP request.">
                 <Param name="key request_id" />
                 <Param name="string method" />
                 <Param name="string body" />
             </Overload>
         </KeyWord>
         <KeyWord name="http_response" func="yes">
-            <Overload descr="Triggered when task receives a response to one of its llHTTPRequests.">
+            <Overload retVal="" descr="Triggered when task receives a response to one of its llHTTPRequests.">
                 <Param name="key request_id" />
                 <Param name="integer status" />
                 <Param name="list metadata" />
@@ -817,22 +817,22 @@ The experience can no longer run:
         <KeyWord name="jump" />
         <KeyWord name="key" />
         <KeyWord name="land_collision" func="yes">
-            <Overload descr="Triggered in the root when physical object or attached avatar is colliding with land.">
+            <Overload retVal="" descr="Triggered in the root when physical object or attached avatar is colliding with land.">
                 <Param name="vector pos" />
             </Overload>
         </KeyWord>
         <KeyWord name="land_collision_end" func="yes">
-            <Overload descr="Triggered in the root when a physical object or attached avatar stops colliding with land.">
+            <Overload retVal="" descr="Triggered in the root when a physical object or attached avatar stops colliding with land.">
                 <Param name="vector pos" />
             </Overload>
         </KeyWord>
         <KeyWord name="land_collision_start" func="yes">
-            <Overload descr="Triggered in the root when a physical object or attached avatar starts colliding with land.">
+            <Overload retVal="" descr="Triggered in the root when a physical object or attached avatar starts colliding with land.">
                 <Param name="vector pos" />
             </Overload>
         </KeyWord>
         <KeyWord name="link_message" func="yes">
-            <Overload descr="Triggered when the script receives a link message that was sent by a call to llMessageLinked.
+            <Overload retVal="" descr="Triggered when the script receives a link message that was sent by a call to llMessageLinked.
 llMessageLinked is used to send messages from one script to another within the same object.">
                 <Param name="integer sender_num" />
                 <Param name="integer num" />
@@ -842,7 +842,7 @@ llMessageLinked is used to send messages from one script to another within the s
         </KeyWord>
         <KeyWord name="list" />
         <KeyWord name="listen" func="yes">
-            <Overload descr="Triggered by chat, use llListen to enable and filter.">
+            <Overload retVal="" descr="Triggered by chat, use llListen to enable and filter.">
                 <Param name="integer channel" />
                 <Param name="string name" />
                 <Param name="key id" />
@@ -4211,40 +4211,40 @@ Be sure to read the Cryptography section before designing a cryptographic algori
             </Overload>
         </KeyWord>
         <KeyWord name="money" func="yes">
-            <Overload descr="Triggered when money is paid to the prim in the amount by id.">
+            <Overload retVal="" descr="Triggered when money is paid to the prim in the amount by id.">
                 <Param name="key id" />
                 <Param name="integer amount" />
             </Overload>
         </KeyWord>
         <KeyWord name="moving_end" func="yes">
-            <Overload descr="Triggered when task stops moving." />
+            <Overload retVal="" descr="Triggered when task stops moving." />
         </KeyWord>
         <KeyWord name="moving_start" func="yes">
-            <Overload descr="Triggered when task starts moving." />
+            <Overload retVal="" descr="Triggered when task starts moving." />
         </KeyWord>
         <KeyWord name="no_sensor" func="yes">
-            <Overload descr="Result of a call to llSensor or llSensorRepeat." />
+            <Overload retVal="" descr="Result of a call to llSensor or llSensorRepeat." />
         </KeyWord>
         <KeyWord name="not_at_rot_target" func="yes">
-            <Overload descr="Result of llRotTarget library function call." />
+            <Overload retVal="" descr="Result of llRotTarget library function call." />
         </KeyWord>
         <KeyWord name="not_at_target" func="yes">
-            <Overload descr="Triggered if an object has not yet reached the target set by the call to llTarget.
+            <Overload retVal="" descr="Triggered if an object has not yet reached the target set by the call to llTarget.
 This event my be triggered multiple times if the target has not been reached." />
         </KeyWord>
         <KeyWord name="object_rez" func="yes">
-            <Overload descr="Triggered when the object rezzes an object.">
+            <Overload retVal="" descr="Triggered when the object rezzes an object.">
                 <Param name="key id" />
             </Overload>
         </KeyWord>
         <KeyWord name="on_rez" func="yes">
-            <Overload descr="Triggered when an object is rezzed (by script or by user). Also triggered in
+            <Overload retVal="" descr="Triggered when an object is rezzed (by script or by user). Also triggered in
 attachments when a user logs in, or when the object is attached from inventory.">
                 <Param name="integer start_param" />
             </Overload>
         </KeyWord>
         <KeyWord name="path_update" func="yes">
-            <Overload descr="Triggered by an active pathfinding character when pathfinding events occur.">
+            <Overload retVal="" descr="Triggered by an active pathfinding character when pathfinding events occur.">
                 <Param name="integer type" />
                 <Param name="list reserved" />
             </Overload>
@@ -4279,7 +4279,7 @@ attachments when a user logs in, or when the object is attached from inventory."
         </KeyWord>
         <KeyWord name="quaternion" />
         <KeyWord name="remote_data" func="yes">
-            <Overload descr="Triggered by various XML-RPC calls.">
+            <Overload retVal="" descr="Triggered by various XML-RPC calls.">
                 <Param name="integer event_type" />
                 <Param name="key channel" />
                 <Param name="key message_id" />
@@ -4291,44 +4291,44 @@ attachments when a user logs in, or when the object is attached from inventory."
         <KeyWord name="return" />
         <KeyWord name="rotation" />
         <KeyWord name="run_time_permissions" func="yes">
-            <Overload descr="Triggered when an agent grants run time permissions to task.">
+            <Overload retVal="" descr="Triggered when an agent grants run time permissions to task.">
                 <Param name="integer perm" />
             </Overload>
         </KeyWord>
         <KeyWord name="sensor" func="yes">
-            <Overload descr="Results from a call to either llSensor or llSensorRepeat.">
+            <Overload retVal="" descr="Results from a call to either llSensor or llSensorRepeat.">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="state" />
         <KeyWord name="state_entry" func="yes">
-            <Overload descr="Triggered on any state transition and startup." />
+            <Overload retVal="" descr="Triggered on any state transition and startup." />
         </KeyWord>
         <KeyWord name="state_exit" func="yes">
-            <Overload descr="Triggered on a qualifying state transition." />
+            <Overload retVal="" descr="Triggered on a qualifying state transition." />
         </KeyWord>
         <KeyWord name="string" />
         <KeyWord name="timer" func="yes">
-            <Overload descr="Repeats the code in the timer(). Result of the llSetTimerEvent library function call." />
+            <Overload retVal="" descr="Repeats the code in the timer(). Result of the llSetTimerEvent library function call." />
         </KeyWord>
         <KeyWord name="touch" func="yes">
-            <Overload descr="Triggered whilst an agent is clicking the task. It will continue to be triggered
+            <Overload retVal="" descr="Triggered whilst an agent is clicking the task. It will continue to be triggered
 until the prim/obect is stopped being clicked (triggers multiple times).">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="touch_end" func="yes">
-            <Overload descr="Triggered when agent stops clicking on task.">
+            <Overload retVal="" descr="Triggered when agent stops clicking on task.">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="touch_start" func="yes">
-            <Overload descr="Triggered when agent starts clicing on task.">
+            <Overload retVal="" descr="Triggered when agent starts clicing on task.">
                 <Param name="integer num_detected" />
             </Overload>
         </KeyWord>
         <KeyWord name="transaction_result" func="yes">
-            <Overload descr="Triggered when task receives asynchronous data.">
+            <Overload retVal="" descr="Triggered when task receives asynchronous data.">
                 <Param name="key id" />
                 <Param name="integer success" />
                 <Param name="string data" />
