@@ -112,6 +112,14 @@ class Lsl(sublime_plugin.EventListener):
                         tooltipRows.append('#### Description')
                         tooltipRows.append(' ')
                         tooltipRows.append('%s' % result['description']['en_US'])
+                    if 'related' in result:
+                        tooltipRows.append(' ')
+                        tooltipRows.append('---')
+                        tooltipRows.append(' ')
+#                       for related in result['related']:
+#                           tooltipRows.append('* <a href="%s%s">%s</a>' % (SL_WIKI, related, related))
+                        tooltipRows.append(', '.join(str('<a href="%s%s">%s</a>' % (SL_WIKI, related, related)) for related in result['related']))
+                        tooltipRows.append(' ')
                     if 'snippets' in result:
                         for snippet in result['snippets']:
                             tooltipRows.append(' ')
