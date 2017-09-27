@@ -7,6 +7,6 @@ default
         list event = [];
 //           ^^^^^ invalid.illegal.lsl
 
-        llRegionSayTo(llDetectedKey(num_detected), PUBLIC_CHANNEL, "test");
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, "test");
     }
 }
