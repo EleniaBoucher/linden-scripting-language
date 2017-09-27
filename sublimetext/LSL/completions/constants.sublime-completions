@@ -1,5 +1,5 @@
 {
-    "scope": "source.lsl - meta.class.state.body, meta.function.user-defined.body.lsl, meta.event.body.lsl",
+    "scope": "source.lsl - meta.class.state.body.lsl, meta.function.user-defined.body.lsl, meta.event.body.lsl, meta.function.parameters.lsl",
     "completions":
     [
         { "trigger": "ACTIVE\tint (0x2 = 2)", "contents": "ACTIVE" },
@@ -278,6 +278,11 @@
         { "trigger": "GCNP_STATIC\tint (1)", "contents": "GCNP_STATIC" },
         { "trigger": "GRAVITY_MULTIPLIER\tint (0x8 = 8)", "contents": "GRAVITY_MULTIPLIER" },
         { "trigger": "HORIZONTAL\tint (1)", "contents": "HORIZONTAL" },
+        { "trigger": "HTTP_ACCEPT\tint (8)", "contents": "HTTP_ACCEPT" },
+        {
+            "trigger": "HTTP_ACCEPT\t…, string MIME_type, …",
+            "contents": "HTTP_ACCEPT, ${1:string MIME_type}, $0"
+        },
         { "trigger": "HTTP_BODY_MAXLENGTH\tint (2)", "contents": "HTTP_BODY_MAXLENGTH" },
         {
             "trigger": "HTTP_BODY_MAXLENGTH\t…, integer length, …",
@@ -303,6 +308,11 @@
         {
             "trigger": "HTTP_PRAGMA_NO_CACHE\t…, integer send_header, …",
             "contents": "HTTP_PRAGMA_NO_CACHE, ${1:integer send_header}, $0"
+        },
+        { "trigger": "HTTP_USER_AGENT\tint (7)", "contents": "HTTP_USER_AGENT" },
+        {
+            "trigger": "HTTP_USER_AGENT\t…, string user_agent_value, …",
+            "contents": "HTTP_USER_AGENT, ${1:string user_agent_value}, $0"
         },
         { "trigger": "HTTP_VERBOSE_THROTTLE\tint (4)", "contents": "HTTP_VERBOSE_THROTTLE" },
         {
@@ -381,6 +391,7 @@
         { "trigger": "OBJECT_BODY_SHAPE_TYPE\tint (26)", "contents": "OBJECT_BODY_SHAPE_TYPE" },
         { "trigger": "OBJECT_CHARACTER_TIME\tint (17)", "contents": "OBJECT_CHARACTER_TIME" },
         { "trigger": "OBJECT_CLICK_ACTION\tint (28)", "contents": "OBJECT_CLICK_ACTION" },
+        { "trigger": "OBJECT_CREATION_TIME\tint (36)", "contents": "OBJECT_CREATION_TIME" },
         { "trigger": "OBJECT_CREATOR\tint (8)", "contents": "OBJECT_CREATOR" },
         { "trigger": "OBJECT_DESC\tint (2)", "contents": "OBJECT_DESC" },
         { "trigger": "OBJECT_GROUP\tint (25)", "contents": "OBJECT_GROUP" },
@@ -401,13 +412,19 @@
         { "trigger": "OBJECT_RETURN_PARCEL\tint (1)", "contents": "OBJECT_RETURN_PARCEL" },
         { "trigger": "OBJECT_RETURN_PARCEL_OWNER\tint (2)", "contents": "OBJECT_RETURN_PARCEL_OWNER" },
         { "trigger": "OBJECT_RETURN_REGION\tint (4)", "contents": "OBJECT_RETURN_REGION" },
+        { "trigger": "OBJECT_RETURN_TIME\tint (*)", "contents": "OBJECT_RETURN_TIME" },
         { "trigger": "OBJECT_REZZER_KEY\tint (32)", "contents": "OBJECT_REZZER_KEY" },
+        { "trigger": "OBJECT_REZ_TIME\tint (*)", "contents": "OBJECT_REZ_TIME" },
         { "trigger": "OBJECT_ROOT\tint (18)", "contents": "OBJECT_ROOT" },
         { "trigger": "OBJECT_ROT\tint (4)", "contents": "OBJECT_ROT" },
         { "trigger": "OBJECT_RUNNING_SCRIPT_COUNT\tint (9)", "contents": "OBJECT_RUNNING_SCRIPT_COUNT" },
+        { "trigger": "OBJECT_SAT_UPON\tint (*)", "contents": "OBJECT_SAT_UPON" },
         { "trigger": "OBJECT_SCRIPT_MEMORY\tint (11)", "contents": "OBJECT_SCRIPT_MEMORY" },
         { "trigger": "OBJECT_SCRIPT_TIME\tint (12)", "contents": "OBJECT_SCRIPT_TIME" },
+        { "trigger": "OBJECT_SELECTED\tint (*)", "contents": "OBJECT_SELECTED" },
+        { "trigger": "OBJECT_SELECT_COUNT\tint (37)", "contents": "OBJECT_SELECT_COUNT" },
         { "trigger": "OBJECT_SERVER_COST\tint (14)", "contents": "OBJECT_SERVER_COST" },
+        { "trigger": "OBJECT_SIT_COUNT\tint (38)", "contents": "OBJECT_SIT_COUNT" },
         { "trigger": "OBJECT_STREAMING_COST\tint (15)", "contents": "OBJECT_STREAMING_COST" },
         { "trigger": "OBJECT_TEMP_ATTACHED\tint (34)", "contents": "OBJECT_TEMP_ATTACHED" },
         { "trigger": "OBJECT_TEMP_ON_REZ\tint (23)", "contents": "OBJECT_TEMP_ON_REZ" },
