@@ -2,7 +2,7 @@
 
 default
 {
-    state_entry()
+    touch_end(integer num_detected)
     {
         list lsl_vectors = [
             TOUCH_INVALID_TEXCOORD,
@@ -12,5 +12,7 @@ default
             ZERO_VECTOR
 //          ^^^^^^^^^^^ constant.language.vector.lsl
         ];
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_vectors));
     }
 }
