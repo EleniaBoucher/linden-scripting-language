@@ -1,12 +1,15 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+
 import sublime
 import sublime_plugin
 
 import os
 import plistlib
 
-from . import __pkg_name__
 
-
+PACKAGE_NAME = __package__.split('.')[0]
 settings = {}
 SETTINGS_FILE = None
 INDENT_STYLE = None
@@ -15,7 +18,7 @@ INDENT_STYLE_K_AND_R = None
 
 
 def status_msg(msg):
-    sublime.status_message( __pkg_name__ + ': ' + msg)
+    sublime.status_message('%s: %s' % (PACKAGE_NAME, msg))
 
 
 def load_settings(reload=False):
@@ -23,7 +26,7 @@ def load_settings(reload=False):
     global settings
     global SETTINGS_FILE
 
-    SETTINGS_FILE = __pkg_name__ + '.sublime-settings'
+    SETTINGS_FILE = '%s.sublime-settings' % (PACKAGE_NAME)
 
     try:
         settings = sublime.load_settings(SETTINGS_FILE)
@@ -43,8 +46,8 @@ def plugin_loaded():
     global INDENT_STYLE_K_AND_R
 
     INDENT_STYLE = os.path.join(sublime.packages_path(), 'User', 'LSL_indent_style.tmPreferences')
-    INDENT_STYLE_ALLMAN = sublime.load_resource('Packages/' + __pkg_name__ + '/metadata/LSL_indent_style.allman.txt')
-    INDENT_STYLE_K_AND_R = sublime.load_resource('Packages/' + __pkg_name__ + '/metadata/LSL_indent_style.k_and_r.txt')
+    INDENT_STYLE_ALLMAN = sublime.load_resource('Packages/%s/metadata/LSL_indent_style.allman.txt' % (PACKAGE_NAME))
+    INDENT_STYLE_K_AND_R = sublime.load_resource('Packages/%s/metadata/LSL_indent_style.k_and_r.txt' % (PACKAGE_NAME))
 
     if not os.path.exists(INDENT_STYLE):
         with open(INDENT_STYLE, mode='w', newline='\n') as file:
@@ -65,7 +68,7 @@ class LslChangeSchemeCommand(sublime_plugin.WindowCommand):
         if self._is_checked:
             settings.erase('color_scheme')
         else:
-            settings.set('color_scheme', 'Packages/' + __pkg_name__ + '/other/color_scheme/LSL.hidden-tmTheme')
+            settings.set('color_scheme', 'Packages/%s/other/color_scheme/LSL.hidden-tmTheme' % (PACKAGE_NAME))
         sublime.save_settings(SETTINGS_FILE)
         self._is_checked = not self._is_checked
 
