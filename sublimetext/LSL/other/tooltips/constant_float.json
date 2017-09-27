@@ -2,38 +2,87 @@
     {
         "description":
         {
-            "en_US": "3.1415926535897932384626433832795"
-        },
-        "name": "PI",
-        "type": "float",
-        "value": "3.14159265"
-    },
-    {
-        "description":
-        {
-            "en_US": "6.283185307179586476925286766559"
-        },
-        "name": "TWO_PI",
-        "type": "float",
-        "value": "6.2831853"
-    },
-    {
-        "description":
-        {
-            "en_US": "1.5707963267948966192313216916398"
-        },
-        "name": "PI_BY_TWO",
-        "type": "float",
-        "value": "1.57079632"
-    },
-    {
-        "description":
-        {
             "en_US": "To convert from degrees to radians"
         },
         "name": "DEG_TO_RAD",
         "type": "float",
-        "value": "0.017453292"
+        "value": "0.017453",
+        "related":
+        [
+            "llAxisAngle2Rot",
+            "llEuler2Rot",
+            "llGetLocalRot",
+            "llGetRootRotation",
+            "llGetRot",
+            "llRezAtRoot",
+            "llRot2Euler",
+            "llRotTarget",
+            "llSetCameraEyeOffset",
+            "llSetKeyframedMotion",
+            "llSetRot",
+            "llTargetOmega",
+            "PI",
+            "PI_BY_TWO",
+            "PRIM_ROT_LOCAL",
+            "RAD_TO_DEG",
+            "TWO_PI"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "3.141593"
+        },
+        "name": "PI",
+        "type": "float",
+        "value": "3.141593",
+        "related":
+        [
+            "llAcos",
+            "llAsin",
+            "llAtan2",
+            "llCos",
+            "llDetectedRot",
+            "llRotateTexture",
+            "llSensor",
+            "llSensorRepeat",
+            "llSetLinkTextureAnim",
+            "llSetTextureAnim",
+            "llSin",
+            "llTan",
+            "DEG_TO_RAD",
+            "PI_BY_TWO",
+            "RAD_TO_DEG",
+            "TWO_PI"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "1.570796"
+        },
+        "name": "PI_BY_TWO",
+        "type": "float",
+        "value": "1.570796",
+        "related":
+        [
+            "llAcos",
+            "llAsin",
+            "llAtan2",
+            "llCos",
+            "llDetectedRot",
+            "llRotateTexture",
+            "llSensor",
+            "llSensorRepeat",
+            "llSetLinkTextureAnim",
+            "llSetTextureAnim",
+            "llSin",
+            "llTan",
+            "DEG_TO_RAD",
+            "PI",
+            "RAD_TO_DEG",
+            "TWO_PI"
+        ]
     },
     {
         "description":
@@ -42,15 +91,66 @@
         },
         "name": "RAD_TO_DEG",
         "type": "float",
-        "value": "57.295779"
+        "value": "57.295779",
+        "related":
+        [
+            "llAxisAngle2Rot",
+            "llEuler2Rot",
+            "llGetLocalRot",
+            "llGetRootRotation",
+            "llGetRot",
+            "llRezAtRoot",
+            "llRot2Euler",
+            "llRotTarget",
+            "llSetCameraEyeOffset",
+            "llSetKeyframedMotion",
+            "llSetRot",
+            "llTargetOmega",
+            "DEG_TO_RAD",
+            "PI",
+            "PI_BY_TWO",
+            "TWO_PI"
+        ]
     },
     {
         "description":
         {
-            "en_US": "1.4142135623730950488016887242097"
+            "en_US": "6.283185"
+        },
+        "name": "TWO_PI",
+        "type": "float",
+        "value": "6.283185",
+        "related":
+        [
+            "llAcos",
+            "llAsin",
+            "llAtan2",
+            "llCos",
+            "llDetectedRot",
+            "llRotateTexture",
+            "llSensor",
+            "llSensorRepeat",
+            "llSetLinkTextureAnim",
+            "llSetTextureAnim",
+            "llSin",
+            "llTan",
+            "DEG_TO_RAD",
+            "PI",
+            "PI_BY_TWO",
+            "RAD_TO_DEG"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "1.414214"
         },
         "name": "SQRT2",
         "type": "float",
-        "value": "1.4142135"
+        "value": "1.414214",
+        "related":
+        [
+            "llSqrt"
+        ]
     }
 ]
