@@ -13,6 +13,6 @@ default
 //          ^^^^^^^^^^^^^^^^ invalid.broken.lsl
         ];
 
-        llRegionSayTo(llDetectedKey(num_detected), PUBLIC_CHANNEL, (string)llGetListLength(lsl_invalid_broken));
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_invalid_broken));
     }
 }
