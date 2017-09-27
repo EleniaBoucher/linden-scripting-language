@@ -2,7 +2,7 @@
 
 default
 {
-    state_entry()
+    touch_end(integer num_detected)
     {
         list lsl_integer_booleans = [
             TRUE,
@@ -10,5 +10,7 @@ default
             FALSE
 //          ^^^^^ constant.language.integer.boolean.lsl
         ];
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_integer_booleans));
     }
 }
