@@ -2,11 +2,13 @@
 
 default
 {
-    state_entry()
+    touch_end(integer num_detected)
     {
         list lsl_rotations = [
             ZERO_ROTATION
 //          ^^^^^^^^^^^^^ constant.language.rotation.lsl
         ];
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_rotations));
     }
 }
