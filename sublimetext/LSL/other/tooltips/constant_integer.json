@@ -13089,9 +13089,9 @@
             "llUnescapeURL",
             "http_request",
             "http_response",
-            "HTTP_METHOD",
             "HTTP_MIMETYPE",
             "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
             "HTTP_VERIFY_CERT",
             "HTTP_VERBOSE_THROTTLE",
             "HTTP_CUSTOM_HEADER",
@@ -13116,6 +13116,31 @@
         "name": "HTTP_MIMETYPE",
         "type": "integer",
         "value": "1",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_MIMETYPE, \"text/plain;charset=utf-8\"], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_MIMETYPE, \"text/html\"], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_MIMETYPE, \"application/json\"], string body);"
+        ],
         "version": "1.10.4(0)"
     },
     {
@@ -13125,7 +13150,32 @@
         },
         "name": "HTTP_BODY_MAXLENGTH",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_BODY_MAXLENGTH, 2048], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_BODY_MAXLENGTH, 16384], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_BODY_MAXLENGTH, 4096], string body);"
+        ]
     },
     {
         "description":
@@ -13135,6 +13185,30 @@
         "name": "HTTP_VERIFY_CERT",
         "type": "integer",
         "value": "3",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_VERIFY_CERT, TRUE], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_VERIFY_CERT, FALSE], string body);"
+        ],
         "version": "1.10.4(0)"
     },
     {
@@ -13144,7 +13218,30 @@
         },
         "name": "HTTP_BODY_TRUNCATED",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "http_response(key request_id, integer status, list metadata, string body)\n{\n\tif (~llListFindList(metadata, [HTTP_BODY_TRUNCATED]))\n\t{\n\t\t// do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -13153,7 +13250,30 @@
         },
         "name": "HTTP_CUSTOM_HEADER",
         "type": "integer",
-        "value": "5"
+        "value": "5",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_CUSTOM_HEADER, string name, string value], string body);"
+        ]
     },
     {
         "description":
@@ -13162,7 +13282,31 @@
         },
         "name": "HTTP_VERBOSE_THROTTLE",
         "type": "integer",
-        "value": "4"
+        "value": "4",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_VERBOSE_THROTTLE, TRUE], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_VERBOSE_THROTTLE, FALSE], string body);"
+        ]
     },
     {
         "description":
@@ -13172,6 +13316,22 @@
         "name": "PARCEL_COUNT_TOTAL",
         "type": "integer",
         "value": "0",
+        "related":
+        [
+            "llGetParcelMaxPrims",
+            "llGetParcelPrimCount",
+            "PARCEL_COUNT_OWNER",
+            "PARCEL_COUNT_GROUP",
+            "PARCEL_COUNT_OTHER",
+            "PARCEL_COUNT_SELECTED",
+            "PARCEL_COUNT_TEMP"
+        ],
+        "usage":
+        [
+            "integer li = llGetParcelPrimCount(vector pos, integer category, integer sim_wide);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_TOTAL, TRUE);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_TOTAL, FALSE);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13182,6 +13342,22 @@
         "name": "PARCEL_COUNT_OWNER",
         "type": "integer",
         "value": "1",
+        "related":
+        [
+            "llGetParcelMaxPrims",
+            "llGetParcelPrimCount",
+            "PARCEL_COUNT_TOTAL",
+            "PARCEL_COUNT_GROUP",
+            "PARCEL_COUNT_OTHER",
+            "PARCEL_COUNT_SELECTED",
+            "PARCEL_COUNT_TEMP"
+        ],
+        "usage":
+        [
+            "integer li = llGetParcelPrimCount(vector pos, integer category, integer sim_wide);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_OWNER, TRUE);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_OWNER, FALSE);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13192,6 +13368,22 @@
         "name": "PARCEL_COUNT_GROUP",
         "type": "integer",
         "value": "2",
+        "related":
+        [
+            "llGetParcelMaxPrims",
+            "llGetParcelPrimCount",
+            "PARCEL_COUNT_TOTAL",
+            "PARCEL_COUNT_OWNER",
+            "PARCEL_COUNT_OTHER",
+            "PARCEL_COUNT_SELECTED",
+            "PARCEL_COUNT_TEMP"
+        ],
+        "usage":
+        [
+            "integer li = llGetParcelPrimCount(vector pos, integer category, integer sim_wide);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_GROUP, TRUE);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_GROUP, FALSE);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13202,6 +13394,22 @@
         "name": "PARCEL_COUNT_OTHER",
         "type": "integer",
         "value": "3",
+        "related":
+        [
+            "llGetParcelMaxPrims",
+            "llGetParcelPrimCount",
+            "PARCEL_COUNT_TOTAL",
+            "PARCEL_COUNT_OWNER",
+            "PARCEL_COUNT_GROUP",
+            "PARCEL_COUNT_SELECTED",
+            "PARCEL_COUNT_TEMP"
+        ],
+        "usage":
+        [
+            "integer li = llGetParcelPrimCount(vector pos, integer category, integer sim_wide);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_OTHER, TRUE);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_OTHER, FALSE);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13212,6 +13420,22 @@
         "name": "PARCEL_COUNT_SELECTED",
         "type": "integer",
         "value": "4",
+        "related":
+        [
+            "llGetParcelMaxPrims",
+            "llGetParcelPrimCount",
+            "PARCEL_COUNT_TOTAL",
+            "PARCEL_COUNT_OWNER",
+            "PARCEL_COUNT_GROUP",
+            "PARCEL_COUNT_OTHER",
+            "PARCEL_COUNT_TEMP"
+        ],
+        "usage":
+        [
+            "integer li = llGetParcelPrimCount(vector pos, integer category, integer sim_wide);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_SELECTED, TRUE);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_SELECTED, FALSE);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13222,6 +13446,22 @@
         "name": "PARCEL_COUNT_TEMP",
         "type": "integer",
         "value": "5",
+        "related":
+        [
+            "llGetParcelMaxPrims",
+            "llGetParcelPrimCount",
+            "PARCEL_COUNT_TOTAL",
+            "PARCEL_COUNT_OWNER",
+            "PARCEL_COUNT_GROUP",
+            "PARCEL_COUNT_OTHER",
+            "PARCEL_COUNT_SELECTED"
+        ],
+        "usage":
+        [
+            "integer li = llGetParcelPrimCount(vector pos, integer category, integer sim_wide);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_TEMP, TRUE);",
+            "integer li = llGetParcelPrimCount(vector pos, PARCEL_COUNT_TEMP, FALSE);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13232,6 +13472,21 @@
         "name": "PARCEL_DETAILS_NAME",
         "type": "integer",
         "value": "0",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_DESC",
+            "PARCEL_DETAILS_OWNER",
+            "PARCEL_DETAILS_GROUP",
+            "PARCEL_DETAILS_AREA",
+            "PARCEL_DETAILS_ID",
+            "PARCEL_DETAILS_SEE_AVATARS"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_NAME]);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13242,6 +13497,21 @@
         "name": "PARCEL_DETAILS_DESC",
         "type": "integer",
         "value": "1",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_NAME",
+            "PARCEL_DETAILS_OWNER",
+            "PARCEL_DETAILS_GROUP",
+            "PARCEL_DETAILS_AREA",
+            "PARCEL_DETAILS_ID",
+            "PARCEL_DETAILS_SEE_AVATARS"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_DESC]);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13252,6 +13522,21 @@
         "name": "PARCEL_DETAILS_OWNER",
         "type": "integer",
         "value": "2",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_NAME",
+            "PARCEL_DETAILS_DESC",
+            "PARCEL_DETAILS_GROUP",
+            "PARCEL_DETAILS_AREA",
+            "PARCEL_DETAILS_ID",
+            "PARCEL_DETAILS_SEE_AVATARS"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_OWNER]);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13262,6 +13547,21 @@
         "name": "PARCEL_DETAILS_GROUP",
         "type": "integer",
         "value": "3",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_NAME",
+            "PARCEL_DETAILS_DESC",
+            "PARCEL_DETAILS_OWNER",
+            "PARCEL_DETAILS_AREA",
+            "PARCEL_DETAILS_ID",
+            "PARCEL_DETAILS_SEE_AVATARS"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_GROUP]);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13272,6 +13572,21 @@
         "name": "PARCEL_DETAILS_AREA",
         "type": "integer",
         "value": "4",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_NAME",
+            "PARCEL_DETAILS_DESC",
+            "PARCEL_DETAILS_OWNER",
+            "PARCEL_DETAILS_GROUP",
+            "PARCEL_DETAILS_ID",
+            "PARCEL_DETAILS_SEE_AVATARS"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_AREA]);"
+        ],
         "version": "1.13.0(8)"
     },
     {
@@ -13281,7 +13596,22 @@
         },
         "name": "PARCEL_DETAILS_ID",
         "type": "integer",
-        "value": "5"
+        "value": "5",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_NAME",
+            "PARCEL_DETAILS_DESC",
+            "PARCEL_DETAILS_OWNER",
+            "PARCEL_DETAILS_GROUP",
+            "PARCEL_DETAILS_AREA",
+            "PARCEL_DETAILS_SEE_AVATARS"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_ID]);"
+        ]
     },
     {
         "description":
@@ -13290,7 +13620,22 @@
         },
         "name": "PARCEL_DETAILS_SEE_AVATARS",
         "type": "integer",
-        "value": "6"
+        "value": "6",
+        "related":
+        [
+            "llGetParcelDetails",
+            "PARCEL_DETAILS_NAME",
+            "PARCEL_DETAILS_DESC",
+            "PARCEL_DETAILS_OWNER",
+            "PARCEL_DETAILS_GROUP",
+            "PARCEL_DETAILS_AREA",
+            "PARCEL_DETAILS_ID"
+        ],
+        "usage":
+        [
+            "list details = llGetParcelDetails(vector pos, list params); // pos.z is ignored",
+            "list details = llGetParcelDetails(vector pos, [PARCEL_DETAILS_SEE_AVATARS]);"
+        ]
     },
     {
         "description":
@@ -13300,6 +13645,17 @@
         "name": "STRING_TRIM_HEAD",
         "type": "integer",
         "value": "0x1",
+        "related":
+        [
+            "llStringTrim",
+            "STRING_TRIM",
+            "STRING_TRIM_TAIL"
+        ],
+        "usage":
+        [
+            "string trimmed = llStringTrim(string src, integer type);",
+            "string trimmed = llStringTrim(string src, STRING_TRIM_HEAD);"
+        ],
         "version": "1.15.0(2)"
     },
     {
@@ -13310,6 +13666,17 @@
         "name": "STRING_TRIM_TAIL",
         "type": "integer",
         "value": "0x2",
+        "related":
+        [
+            "llStringTrim",
+            "STRING_TRIM",
+            "STRING_TRIM_HEAD"
+        ],
+        "usage":
+        [
+            "string trimmed = llStringTrim(string src, integer type);",
+            "string trimmed = llStringTrim(string src, STRING_TRIM_TAIL);"
+        ],
         "version": "1.15.0(2)"
     },
     {
@@ -13320,6 +13687,17 @@
         "name": "STRING_TRIM",
         "type": "integer",
         "value": "0x3",
+        "related":
+        [
+            "llStringTrim",
+            "STRING_TRIM_HEAD",
+            "STRING_TRIM_TAIL"
+        ],
+        "usage":
+        [
+            "string trimmed = llStringTrim(string src, integer type);",
+            "string trimmed = llStringTrim(string src, STRING_TRIM);"
+        ],
         "version": "1.15.0(2)"
     },
     {
@@ -13329,7 +13707,28 @@
         },
         "name": "CLICK_ACTION_NONE",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_NONE);"
+        ]
     },
     {
         "description":
@@ -13338,7 +13737,28 @@
         },
         "name": "CLICK_ACTION_TOUCH",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_TOUCH);"
+        ]
     },
     {
         "description":
@@ -13347,7 +13767,28 @@
         },
         "name": "CLICK_ACTION_SIT",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_SIT);"
+        ]
     },
     {
         "description":
@@ -13356,7 +13797,28 @@
         },
         "name": "CLICK_ACTION_BUY",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_BUY);"
+        ]
     },
     {
         "description":
@@ -13365,7 +13827,28 @@
         },
         "name": "CLICK_ACTION_PAY",
         "type": "integer",
-        "value": "3"
+        "value": "3",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_PAY);"
+        ]
     },
     {
         "description":
@@ -13374,7 +13857,28 @@
         },
         "name": "CLICK_ACTION_OPEN",
         "type": "integer",
-        "value": "4"
+        "value": "4",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_OPEN);"
+        ]
     },
     {
         "description":
@@ -13383,7 +13887,28 @@
         },
         "name": "CLICK_ACTION_PLAY",
         "type": "integer",
-        "value": "5"
+        "value": "5",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_OPEN_MEDIA",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_PLAY);"
+        ]
     },
     {
         "description":
@@ -13392,7 +13917,28 @@
         },
         "name": "CLICK_ACTION_OPEN_MEDIA",
         "type": "integer",
-        "value": "6"
+        "value": "6",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_ZOOM"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_OPEN_MEDIA);"
+        ]
     },
     {
         "description":
@@ -13401,7 +13947,28 @@
         },
         "name": "CLICK_ACTION_ZOOM",
         "type": "integer",
-        "value": "7"
+        "value": "7",
+        "related":
+        [
+            "llPassTouches",
+            "llSetClickAction",
+            "touch",
+            "touch_start",
+            "touch_end",
+            "CLICK_ACTION_NONE",
+            "CLICK_ACTION_TOUCH",
+            "CLICK_ACTION_SIT",
+            "CLICK_ACTION_BUY",
+            "CLICK_ACTION_PAY",
+            "CLICK_ACTION_OPEN",
+            "CLICK_ACTION_PLAY",
+            "CLICK_ACTION_OPEN_MEDIA"
+        ],
+        "usage":
+        [
+            "llSetClickAction(integer action);",
+            "llSetClickAction(CLICK_ACTION_ZOOM);"
+        ]
     },
     {
         "description":
@@ -13410,7 +13977,15 @@
         },
         "name": "TOUCH_INVALID_FACE",
         "type": "integer",
-        "value": "-1"
+        "value": "-1",
+        "related":
+        [
+            "llDetectedTouchFace"
+        ],
+        "usage":
+        [
+            "if (llDetectedTouchFace(0) == TOUCH_INVALID_FACE)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14549,7 +15124,31 @@
         },
         "name": "HTTP_PRAGMA_NO_CACHE",
         "type": "integer",
-        "value": "6"
+        "value": "6",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_USER_AGENT",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_PRAGMA_NO_CACHE, TRUE], string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_PRAGMA_NO_CACHE, FALSE], string body);"
+        ]
     },
     {
         "description":
