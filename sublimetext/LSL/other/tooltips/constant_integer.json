@@ -1629,6 +1629,146 @@
     {
         "description":
         {
+            "en_US": ""
+        },
+        "name": "OBJECT_GROUP_TAG",
+        "type": "integer",
+        "value": "33",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.11.02.321369"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_TEMP_ATTACHED",
+        "type": "integer",
+        "value": "34",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.11.02.321369"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_ATTACHED_SLOTS_AVAILABLE",
+        "type": "integer",
+        "value": "35",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_CREATION_TIME",
+        "type": "integer",
+        "value": "36",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_SELECT_COUNT",
+        "type": "integer",
+        "value": "37",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_SIT_COUNT",
+        "type": "integer",
+        "value": "38",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_SELECTED",
+        "type": "integer",
+        "value": "*",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_SAT_UPON",
+        "type": "integer",
+        "value": "*",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_REZ_TIME",
+        "type": "integer",
+        "value": "*",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "OBJECT_RETURN_TIME",
+        "type": "integer",
+        "value": "*",
+        "related":
+        [
+            "llGetObjectDetails"
+        ],
+        "version": "16.12.03.322072"
+    },
+    {
+        "description":
+        {
             "en_US": "Used with llGetObjectDetails to get an object's name"
         },
         "name": "OBJECT_NAME",
@@ -9179,6 +9319,266 @@
     {
         "description":
         {
+            "en_US": "The script is not running as part of an experience with a valid experience key."
+        },
+        "name": "SIT_NOT_EXPERIENCE",
+        "type": "integer",
+        "value": "-1",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_NOT_EXPERIENCE)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "The agent has not granted permission."
+        },
+        "name": "SIT_NO_EXPERIENCE_PERMISSION",
+        "type": "integer",
+        "value": "-2",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_NO_EXPERIENCE_PERMISSION)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "Unable to find an open sit target."
+        },
+        "name": "SIT_NO_SIT_TARGET",
+        "type": "integer",
+        "value": "-3",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_NO_SIT_TARGET)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "Unable to find specified agent."
+        },
+        "name": "SIT_INVALID_AGENT",
+        "type": "integer",
+        "value": "-4",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_INVALID_AGENT)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "Unable to find specified link or the link constant would return multiple prims."
+        },
+        "name": "SIT_INVALID_LINK",
+        "type": "integer",
+        "value": "-5",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_INVALID_LINK)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "The avatar does not have access to the parcel that the prim running this script is located in."
+        },
+        "name": "SIT_NO_ACCESS",
+        "type": "integer",
+        "value": "-6",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_NO_ACCESS)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "This value is returned if the llSitOnLink is trying to force the user to sit on something that cannot be sat upon (such as an attachment)."
+        },
+        "name": "SIT_INVALID_OBJECT",
+        "type": "integer",
+        "value": "-7",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS"
+        ],
+        "usage":
+        [
+            "if (llSitOnLink(key agent_id, integer link) == SIT_INVALID_OBJECT)\n{\n\t; // do something\n}"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "PRIM_ALLOW_UNSIT",
+        "type": "integer",
+        "value": "39",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "PRIM_ALLOW_UNSIT, integer flag"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "PRIM_SCRIPTED_SIT_ONLY",
+        "type": "integer",
+        "value": "40",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SIT_TARGET",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "PRIM_SCRIPTED_SIT_ONLY, integer flag"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": ""
+        },
+        "name": "PRIM_SIT_TARGET",
+        "type": "integer",
+        "value": "41",
+        "related":
+        [
+            "llSitOnLink",
+            "PRIM_ALLOW_UNSIT",
+            "PRIM_SCRIPTED_SIT_ONLY",
+            "SIT_NOT_EXPERIENCE",
+            "SIT_NO_EXPERIENCE_PERMISSION",
+            "SIT_NO_SIT_TARGET",
+            "SIT_INVALID_AGENT",
+            "SIT_INVALID_LINK",
+            "SIT_NO_ACCESS",
+            "SIT_INVALID_OBJECT"
+        ],
+        "usage":
+        [
+            "PRIM_SIT_TARGET, integer active, vector offset, rotation rot"
+        ]
+    },
+    {
+        "description":
+        {
             "en_US": "Followed by PRIM_TYPE_BOX, PRIM_TYPE_CYLINDER, PRIM_TYPE_PRISM, PRIM_TYPE_SPHERE, PRIM_TYPE_TORUS, PRIM_TYPE_TUBE, or PRIM_TYPE_SCULPT and their arguments"
         },
         "name": "PRIM_TYPE",
@@ -13306,6 +13706,70 @@
             "key request_id = llHTTPRequest(string url, list parameters, string body);",
             "key request_id = llHTTPRequest(string url, [HTTP_VERBOSE_THROTTLE, TRUE], string body);",
             "key request_id = llHTTPRequest(string url, [HTTP_VERBOSE_THROTTLE, FALSE], string body);"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "The user agent value is appended to the one generated by LSL itself. It should follow the syntax from the HTTP standard like: \"My-Script-Name/1.0 (Mozilla compatible)\"."
+        },
+        "name": "HTTP_USER_AGENT",
+        "type": "integer",
+        "value": "7",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_ACCEPT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_USER_AGENT, string user_agent_value], string body);"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "`HTTP_ACCEPT` parameters can be passed to limit the number of mime types that are sent in the Accept: header of the HTTP request.  Specified mime types may include character set and q parameters. This parameter may be specified multiple times. The specified mime type must be one already recognized by `llHTTPRequest`. The Content-Type header in the response is checked against the specified `HTTP_ACCEPT` parameters. If the value of the header is not in the list of acceptable mime types, `llHTTPRequest` will return 415 as a result code and the body will be `\"Unsupported or unknown Content-Type.\"`"
+        },
+        "name": "HTTP_ACCEPT",
+        "type": "integer",
+        "value": "8",
+        "related":
+        [
+            "llEscapeURL",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llUnescapeURL",
+            "http_request",
+            "http_response",
+            "HTTP_METHOD",
+            "HTTP_MIMETYPE",
+            "HTTP_BODY_MAXLENGTH",
+            "HTTP_BODY_TRUNCATED",
+            "HTTP_VERIFY_CERT",
+            "HTTP_CUSTOM_HEADER",
+            "HTTP_PRAGMA_NO_CACHE",
+            "HTTP_VERBOSE_THROTTLE",
+            "HTTP_USER_AGENT"
+        ],
+        "usage":
+        [
+            "key request_id = llHTTPRequest(string url, list parameters, string body);",
+            "key request_id = llHTTPRequest(string url, [HTTP_ACCEPT, string MIME_type], string body);"
         ]
     },
     {
