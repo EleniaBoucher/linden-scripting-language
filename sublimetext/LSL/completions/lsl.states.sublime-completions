@@ -1,8 +1,0 @@
-{
-    "scope": "source.lsl - meta.class.state.body",
-    "completions":
-    [
-        { "trigger": "default\tstate", "contents": "default${LSL_SPACE_OR_NEWLINE}{\n\t$0\n}" },
-        { "trigger": "state other\tstate", "contents": "state ${1:other}${LSL_SPACE_OR_NEWLINE}{\n\t$0\n}" }
-    ]
-}
