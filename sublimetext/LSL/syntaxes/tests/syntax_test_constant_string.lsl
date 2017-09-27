@@ -2,7 +2,7 @@
 
 default
 {
-    state_entry()
+    touch_end(integer num_detected)
     {
         list lsl_strings = [
             EOF,
@@ -42,5 +42,7 @@ default
             URL_REQUEST_GRANTED
 //          ^^^^^^^^^^^^^^^^^^^ constant.language.string.lsl
         ];
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_strings));
     }
 }
