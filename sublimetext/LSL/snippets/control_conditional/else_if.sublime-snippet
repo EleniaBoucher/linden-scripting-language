@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[else if (${1:condition})${LSL_SPACE_OR_NEWLINE}{
+	$0
+}]]></content>
+	<tabTrigger>else if</tabTrigger>
+	<scope>meta.function.user-defined.body.lsl, meta.event.body.lsl</scope>
+	<description>conditional control</description>
+</snippet>
