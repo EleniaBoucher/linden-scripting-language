@@ -1680,7 +1680,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -1694,7 +1694,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -1708,7 +1708,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -1722,7 +1722,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -1736,7 +1736,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -1750,7 +1750,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -1764,7 +1764,7 @@
         [
             "llGetObjectDetails"
         ],
-        "version": "16.12.03.322072"
+        "version": "17.08.11.328159"
     },
     {
         "description":
@@ -13738,7 +13738,8 @@
         [
             "key request_id = llHTTPRequest(string url, list parameters, string body);",
             "key request_id = llHTTPRequest(string url, [HTTP_USER_AGENT, string user_agent_value], string body);"
-        ]
+        ],
+        "version": "17.06.13.327111"
     },
     {
         "description":
@@ -13770,7 +13771,8 @@
         [
             "key request_id = llHTTPRequest(string url, list parameters, string body);",
             "key request_id = llHTTPRequest(string url, [HTTP_ACCEPT, string MIME_type], string body);"
-        ]
+        ],
+        "version": "17.06.13.327111"
     },
     {
         "description":
