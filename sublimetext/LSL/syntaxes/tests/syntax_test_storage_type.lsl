@@ -74,7 +74,7 @@ run_test()
 //  ^^^^^^ storage.type.lsl
 //              ^^^^^^ storage.type.lsl
 
-    l = ll = [f, ff, i, ii, k, kk, q, qq, r, rr, s, ss, v, vv];
+    ll = l = [f, ff, i, ii, k, kk, q, qq, r, rr, s, ss, v, vv];
 }
 
 default
