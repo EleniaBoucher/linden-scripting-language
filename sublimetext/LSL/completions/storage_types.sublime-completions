@@ -1,12 +1,11 @@
 {
-    "scope": "source.lsl - meta.class.state.body, meta.function.user-defined.body.lsl, meta.event.body.lsl",
+    "scope": "source.lsl - meta.class.state.body, meta.function.user-defined.body.lsl, meta.event.body.lsl, meta.function.parameters.lsl",
     "completions":
     [
         { "trigger": "float\tstorage type", "contents": "float" },
         { "trigger": "integer\tstorage type", "contents": "integer" },
         { "trigger": "key\tstorage type", "contents": "key" },
         { "trigger": "list\tstorage type", "contents": "list" },
-        { "trigger": "quaternion\tstorage type", "contents": "quaternion" },
         { "trigger": "rotation\tstorage type", "contents": "rotation" },
         { "trigger": "string\tstorage type", "contents": "string" },
         { "trigger": "vector\tstorage type", "contents": "vector" }
