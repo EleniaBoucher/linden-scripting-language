@@ -7,14 +7,14 @@
  // <- punctuation.definition.comment.line.double-slash.lsl
 //^^^^^^^^^^^^^^^^^^^^^ comment.line.double-slash.lsl
 
-// /* ... */
+// /* … */
 // <- punctuation.definition.comment.line.double-slash.lsl
  // <- punctuation.definition.comment.line.double-slash.lsl
-//^^^^^^^^^^ comment.line.double-slash.lsl
-// ^^^^^^^^^ -comment.block.lsl
+//^^^^^^^^ comment.line.double-slash.lsl
+// ^^^^^^^ -comment.block.lsl
 // ^^ - punctuation.definition.comment.block.begin.lsl
-//   ^^^^^ -comment.block.lsl
-//        ^^ - punctuation.definition.comment.block.end.lsl
+//   ^^^ -comment.block.lsl
+//      ^^ - punctuation.definition.comment.block.end.lsl
 
 /* // */
 // <- punctuation.definition.comment.block.begin.lsl
@@ -28,6 +28,6 @@ default
 {
     touch_end(integer num_detected)
     {
-        llRegionSayTo(llDetectedKey(num_detected), PUBLIC_CHANNEL, "Touched.");
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, "Touched.");
     }
 }
