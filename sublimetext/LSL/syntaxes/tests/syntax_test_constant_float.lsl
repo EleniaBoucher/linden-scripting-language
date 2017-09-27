@@ -2,7 +2,7 @@
 
 default
 {
-    state_entry()
+    touch_end(integer num_detected)
     {
         list lsl_floats = [
             DEG_TO_RAD,
@@ -18,5 +18,7 @@ default
             TWO_PI
 //          ^^^^^^ constant.language.float.lsl
         ];
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_floats));
     }
 }
