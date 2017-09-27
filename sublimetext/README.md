@@ -1,11 +1,11 @@
-[![Sublime Text minimum required version](https://img.shields.io/badge/Sublime%20Text-Build%203124+-orange.svg?style=flat-square)](https://www.sublimetext.com)
+[![Sublime Text Build 3124+](https://img.shields.io/badge/Sublime%20Text-Build%203124+-orange.svg?style=flat-square)](https://www.sublimetext.com)
 
 ## Usage
 
 Download **Sublime Text 3**:
 
-* [Sublime Text 3 (stable)](https://www.sublimetext.com/3)
-* [Sublime Text 3 (dev)](https://www.sublimetext.com/3dev)
+* [![Sublime Text 3 (stable)](https://img.shields.io/badge/Sublime%20Text%203-%28stable%29-lightgrey.svg?style=flat-square)](https://www.sublimetext.com/3)
+* [![Sublime Text 3 (dev)](https://img.shields.io/badge/Sublime%20Text%203-%28dev%29-lightgrey.svg?style=flat-square)](https://www.sublimetext.com/3dev)
 
 then:
 
@@ -15,9 +15,15 @@ then:
 
 ### Tooltips
 
-Tooltips require **Build 3124 or later**.
+Tooltips require **Sublime Text Build 3124+**.
 
 ### Linters
+
+Download the latest [`makopo/lslint`](https://github.com/makopo/lslint) release from:
+
+<https://github.com/Makopo/lslint/releases/latest>
+
+and unpack the binary files to the [`LSL/bin/lslint`](LSL/bin/lslint) subfolder. Then:
 
 * In **Sublime Text 3** open the command palette
   * `Tools > Command palette` from the menu
