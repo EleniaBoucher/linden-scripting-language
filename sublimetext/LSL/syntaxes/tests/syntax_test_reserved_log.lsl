@@ -4,6 +4,8 @@ default
 {
     touch_end(integer num_detected)
     {
+        return;// don't spam Linden Lab
+
         print(0.0);
 //      ^^^^^ reserved.log.lsl
         print(0);
@@ -19,6 +21,6 @@ default
         print(ZERO_VECTOR);
 //      ^^^^^ reserved.log.lsl
 
-        llRegionSayTo(llDetectedKey(num_detected), PUBLIC_CHANNEL, "test");
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, "test");
     }
 }
