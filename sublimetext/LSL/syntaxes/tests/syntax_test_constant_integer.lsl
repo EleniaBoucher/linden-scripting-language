@@ -2,7 +2,7 @@
 
 default
 {
-    state_entry()
+    touch_end(integer num_detected)
     {
         list lsl_integers = [
             ACTIVE,
@@ -367,6 +367,8 @@ default
 //          ^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             HORIZONTAL,
 //          ^^^^^^^^^^ constant.language.integer.lsl
+            HTTP_ACCEPT,
+//          ^^^^^^^^^^^ constant.language.integer.lsl
             HTTP_BODY_MAXLENGTH,
 //          ^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             HTTP_BODY_TRUNCATED,
@@ -379,6 +381,8 @@ default
 //          ^^^^^^^^^^^^^ constant.language.integer.lsl
             HTTP_PRAGMA_NO_CACHE,
 //          ^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            HTTP_USER_AGENT,
+//          ^^^^^^^^^^^^^^^ constant.language.integer.lsl
             HTTP_VERBOSE_THROTTLE,
 //          ^^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             HTTP_VERIFY_CERT,
@@ -497,6 +501,8 @@ default
 //          ^^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_CLICK_ACTION,
 //          ^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_CREATION_TIME,
+//          ^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_CREATOR,
 //          ^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_DESC,
@@ -537,20 +543,32 @@ default
 //          ^^^^^^^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_RETURN_REGION,
 //          ^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_RETURN_TIME,
+//          ^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_REZZER_KEY,
 //          ^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_REZ_TIME,
+//          ^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_ROOT,
 //          ^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_ROT,
 //          ^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_RUNNING_SCRIPT_COUNT,
 //          ^^^^^^^^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_SAT_UPON,
+//          ^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_SCRIPT_MEMORY,
 //          ^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_SCRIPT_TIME,
 //          ^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_SELECTED,
+//          ^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_SELECT_COUNT,
+//          ^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_SERVER_COST,
 //          ^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
+            OBJECT_SIT_COUNT,
+//          ^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_STREAMING_COST,
 //          ^^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
             OBJECT_TEMP_ATTACHED,
@@ -1354,5 +1372,7 @@ default
             XP_ERROR_UNKNOWN_ERROR
 //          ^^^^^^^^^^^^^^^^^^^^^^ constant.language.integer.lsl
         ];
+
+        llRegionSayTo(llDetectedKey(0), PUBLIC_CHANNEL, (string)llGetListLength(lsl_integers));
     }
 }
