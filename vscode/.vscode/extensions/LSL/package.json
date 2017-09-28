@@ -12,7 +12,8 @@
     "url": "git+https://github.com/buildersbrewery/linden-scripting-language.git"
   },
   "bugs": {
-    "url": "https://github.com/buildersbrewery/linden-scripting-language/issues"
+    "url": "https://github.com/buildersbrewery/linden-scripting-language/issues",
+    "email": "buildersbrewery@gmail.com"
   },
   "homepage": "https://github.com/buildersbrewery/linden-scripting-language#readme",
   "categories": [
