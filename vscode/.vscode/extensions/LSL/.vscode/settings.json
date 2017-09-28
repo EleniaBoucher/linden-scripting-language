@@ -1,4 +1,10 @@
 {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
     "editor.useTabStops": false,
-    "editor.tabSize": 4
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "out/": true
+    }
 }
