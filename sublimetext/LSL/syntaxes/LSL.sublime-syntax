@@ -29,7 +29,7 @@ variables:
   lsl_word: '(?:[A-Za-z_]\w*)'
 contexts:
   main:
-    - include: comments
+    - include: lsl_comments
 #   - include: lsl_strings
     - include: lsl_states
     - include: lsl_user_functions
@@ -39,6 +39,8 @@ contexts:
 #   - include: operators
 #   - include: lists
 # TODO: global variables
+  prototype:
+    - include: lsl_comments
   lists:
     - match: '\['
       scope: punctuation.section.list.begin.lsl
@@ -49,24 +51,26 @@ contexts:
           scope: punctuation.section.list.end.lsl
           pop: true
         - include: infunc
-  comments:
-    - match: '(//)'
+  lsl_comments:
+    - match: '//'
       scope: punctuation.definition.comment.line.double-slash.lsl
       push:
+        - meta_include_prototype: false
         - meta_scope: comment.line.double-slash.lsl
-# TODO: test if this works
-        - match: '$(\n)?'
+        - match: '\n'
           pop: true
-#   - match: '/\*\*(?!/)'
-#     scope: punctuation.definition.comment.block.documentation.begin.lsl
-#     push:
-#       - meta_scope: comment.block.documentation.lsl
-#       - match: '\*/'
-#         scope: punctuation.definition.comment.block.documentation.end.lsl
-#         pop: true
+    - match: '/\*\*(?!/)'
+      scope: punctuation.definition.comment.block.documentation.begin.lsl
+      push:
+        - meta_include_prototype: false
+        - meta_scope: comment.block.documentation.lsl
+        - match: '\*/'
+          scope: punctuation.definition.comment.block.documentation.end.lsl
+          pop: true
     - match: '/\*'
       scope: punctuation.definition.comment.block.begin.lsl
       push:
+        - meta_include_prototype: false
         - meta_scope: comment.block.lsl
         - match: '\*/'
           scope: punctuation.definition.comment.block.end.lsl
@@ -95,7 +99,6 @@ contexts:
               scope: punctuation.section.event.body.end.lsl
               pop: true
             - include: infunc
-        - include: comments
   flow_control:
     - match: '\b(jump)\s+({{lsl_word}})(;)'
       captures:
@@ -113,7 +116,6 @@ contexts:
         1: 'keyword.control.loop.lsl'
       push:
         - meta_scope: 'meta.do-while.lsl'
-        - include: comments
         - include: block-scope
         - match: '\b(while)\b'
           scope: 'keyword.control.loop.lsl'
@@ -167,7 +169,6 @@ contexts:
 #       - include: expressions
     - include: block-scope
   block-scope:
-    - include: comments
     - match: '\}'
       scope: 'punctuation.definition.block.end.lsl'
       pop: true
@@ -204,9 +205,7 @@ contexts:
               scope: punctuation.definition.block.end.lsl
               pop: true
             - include: infunc
-        - include: comments
   infunc:
-    - include: comments
     - include: lists
     - include: lsl_strings
     - include: flow_control
@@ -270,7 +269,6 @@ contexts:
           push:
             - match: '(?=\))'
               pop: true
-            - include: comments
             - include: lists
             - include: lsl_strings
             - include: lsl_constants
@@ -344,11 +342,11 @@ contexts:
         2: entity.name.variable.lsl
     - match: '(,)'
       scope: punctuation.separator.komma.lsl
-    - include: comments
   lsl_strings:
     - match: '"'
       scope: punctuation.definition.string.quoted.double.begin.lsl
       push:
+        - meta_include_prototype: false
         - meta_scope: string.quoted.double.lsl
         - match: '"'
           scope: punctuation.definition.string.quoted.double.end.lsl
@@ -380,9 +378,7 @@ contexts:
             - match: '(?=})'
               scope: punctuation.section.class.state.end.lsl
               pop: true
-            - include: comments
             - include: event
-        - include: comments
   lsl_types:
     - match: '\b({{lsl_storage_type}})\b'
       captures:
