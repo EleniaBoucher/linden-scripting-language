@@ -298,7 +298,7 @@ Ext:lsl
 llAttachToAvatarTemp($[![integer attach_point]!]);[>END<]!$[FingerTextData FingerTextData]@#
 llAvatarOnLinkSitTarget
 Ext:lsl
-llAvatarOnLinkSitTarget($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
+llAvatarOnLinkSitTarget($[![(lis)LINK_ROOT|LINK_THIS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
 llAvatarOnSitTarget
 Ext:lsl
 llAvatarOnSitTarget()[>END<]!$[FingerTextData FingerTextData]@#
@@ -319,7 +319,7 @@ Ext:lsl
 llBreakAllLinks();[>END<]!$[FingerTextData FingerTextData]@#
 llBreakLink
 Ext:lsl
-llBreakLink($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!]);[>END<]!$[FingerTextData FingerTextData]@#
+llBreakLink($[![(lis)LINK_ROOT|integer link]!]);[>END<]!$[FingerTextData FingerTextData]@#
 llCastRay
 Ext:lsl
 llCastRay($[![vector start]!], $[![vector end]!], $[![list options]!]);[>END<]!$[FingerTextData FingerTextData]@#
@@ -592,22 +592,22 @@ Ext:lsl
 llGetLandOwnerAt($[![vector pos]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetLinkKey
 Ext:lsl
-llGetLinkKey($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetLinkKey($[![(lis)LINK_ROOT|LINK_THIS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetLinkMedia
 Ext:lsl
-llGetLinkMedia($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!], $[![(lis)ALL_SIDES|0|1|2|3|4|5|6|7|8|integer side]!], $[![list params]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetLinkMedia($[![(lis)LINK_ROOT|LINK_THIS|integer link]!], $[![(lis)ALL_SIDES|0|1|2|3|4|5|6|7|8|integer side]!], $[![list params]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetLinkName
 Ext:lsl
-llGetLinkName($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetLinkName($[![(lis)LINK_ROOT|LINK_THIS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetLinkNumber
 Ext:lsl
 llGetLinkNumber()[>END<]!$[FingerTextData FingerTextData]@#
 llGetLinkNumberOfSides
 Ext:lsl
-llGetLinkNumberOfSides($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetLinkNumberOfSides($[![(lis)LINK_ROOT|LINK_THIS|integer link]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetLinkPrimitiveParams
 Ext:lsl
-llGetLinkPrimitiveParams($[![(lis)LINK_SET|LINK_ROOT|LINK_ALL_CHILDREN|LINK_THIS|LINK_ALL_OTHERS|integer link]!], $[![list params]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetLinkPrimitiveParams($[![(lis)LINK_ROOT|LINK_THIS|integer link]!], $[![list params]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetListEntryType
 Ext:lsl
 llGetListEntryType($[![list src]!], $[![integer index]!])[>END<]!$[FingerTextData FingerTextData]@#
@@ -775,16 +775,16 @@ Ext:lsl
 llGetSunDirection()[>END<]!$[FingerTextData FingerTextData]@#
 llGetTexture
 Ext:lsl
-llGetTexture($[![(lis)ALL_SIDES|0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetTexture($[![(lis)0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetTextureOffset
 Ext:lsl
-llGetTextureOffset($[![(lis)ALL_SIDES|0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetTextureOffset($[![(lis)0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetTextureRot
 Ext:lsl
-llGetTextureRot($[![(lis)ALL_SIDES|0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetTextureRot($[![(lis)0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetTextureScale
 Ext:lsl
-llGetTextureScale($[![(lis)ALL_SIDES|0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
+llGetTextureScale($[![(lis)0|1|2|3|4|5|6|7|8|integer side]!])[>END<]!$[FingerTextData FingerTextData]@#
 llGetTime
 Ext:lsl
 llGetTime()[>END<]!$[FingerTextData FingerTextData]@#
