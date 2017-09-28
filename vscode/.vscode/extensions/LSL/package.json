@@ -20,7 +20,7 @@
     "Snippets"
   ],
   "engines": {
-    "vscode": "*"
+    "vscode": "^1.16.0"
   },
   "activationEvents": [
     "onLanguage:lsl"
