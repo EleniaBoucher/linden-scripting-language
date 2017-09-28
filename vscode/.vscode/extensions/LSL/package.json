@@ -1,110 +1,116 @@
 {
-    "name": "LSL",
-    "displayName": "LSL",
-    "version": "0.0.0",
-//  "license": "___",
-    "description": "LSL for vscode",
-    "publisher": "buildersbrewery",
-//  "icon": "path/to/icon.png",
-    "galleryBanner": {
-        "color": "#000000",
-        "theme": "dark"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/buildersbrewery/linden-scripting-language.git"
-    },
-    "bugs": {
-        "url": "https://github.com/buildersbrewery/linden-scripting-language/issues"
-    },
-    "homepage": "https://github.com/buildersbrewery/linden-scripting-language#readme",
-    "categories": [
-        "Languages"
-    ],
-    "engines": {
-        "vscode": "^1.4.0"
-    },
-    "extensionDependencies": [
-        "vscode.lsl"
-    ],
-    "dependencies": {
-        "vscode-languageclient": "^2.6.3"
-    },
-    "activationEvents": [
-        "onLanguage:lsl"
-    ],
-    "configuration": {
-        "type": "object",
-        "title": "LSL configuration",
-        "properties": {
-            "lsl-server.maxNumberOfProblems": {
-                "type": "number",
-                "default": 100,
-                "description": "Controls the maximum number of problems produced by the server."
-            }
-        }
-    },
-    "contributes": {
-        "grammars": [
-            {
-                "language": "lsl",
-                "scopeName": "source.lsl",
-                "path": "./syntaxes/LSL.tmLanguage"
-            }
-        ],
-        "languages": [
-            {
-                "id": "lsl",
-                "aliases": [
-                    "LSL",
-                    "Linden Script",
-                    "Linden Scripting Language",
-                    "Second Life",
-                    "Second Life Script"
-                ],
-                "extensions": [
-                    ".lsl"
-                ],
-                "configuration": "./syntaxes/lsl.configuration.json"
-            }
-        ],
-        "snippets": [
-            {
-                "language": "lsl",
-                "path": "./snippets/lsl.json"
-            }
-        ],
-        "themes": [
-            {
-                "label": "Linden Lab Viewer Theme",
-                "uiTheme": "vs",
-                "path": "./themes/LSL.tmTheme"
-            }
-        ]
-    },
-    "menus": {
-        "editor/context": [
-            {
-                "command": "extension.build",
-                "when": "editorLangId == lsl"
-            }
-        ]
-    },
-    "commands": [
-        {
-            "command": "extension.build",
-            "title": "Build",
-            "category": "LSL",
-            "icon": {
-//              "light": "./icons/lsl.light.png",
-//              "dark": "./icons/lsl.dark.png"
-            }
-        }
-    ],
-    "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -p ./client && cd server && npm run compile && cd ..",
-        "update-vscode": "node ./node_modules/vscode/bin/install",
-        "postinstall": "node ./node_modules/vscode/bin/install && cd server && npm install"
+  "name": "LSL",
+  "displayName": "LSL",
+  "version": "0.0.0",
+// "license": "___",
+  "description": "LSL for vscode",
+  "publisher": "buildersbrewery",
+// "icon": "path/to/icon.png",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buildersbrewery/linden-scripting-language.git"
+  },
+  "bugs": {
+    "url": "https://github.com/buildersbrewery/linden-scripting-language/issues"
+  },
+  "homepage": "https://github.com/buildersbrewery/linden-scripting-language#readme",
+  "categories": [
+    "Languages"
+  ],
+  "engines": {
+    "vscode": "^1.16.0"
+  },
+  "extensionDependencies": [
+    "vscode.lsl"
+  ],
+  "dependencies": {
+    "vscode-languageclient": "^2.6.3"
+  },
+  "activationEvents": [
+    "onLanguage:lsl"
+  ],
+  "configuration": {
+    "type": "object",
+    "title": "LSL configuration",
+    "properties": {
+      "lsl-server.maxNumberOfProblems": {
+        "type": "number",
+        "default": 100,
+        "description": "Controls the maximum number of problems produced by the server."
+      }
     }
+  },
+  "contributes": {
+    "grammars": [
+      {
+        "language": "lsl",
+        "scopeName": "source.lsl",
+        "path": "./syntaxes/LSL.tmLanguage"
+      }
+    ],
+    "languages": [
+      {
+        "id": "lsl",
+        "aliases": [
+          "LSL",
+          "Linden Script",
+          "Linden Scripting Language",
+          "Second Life",
+          "Second Life Script"
+        ],
+        "extensions": [
+          ".lsl"
+        ],
+        "configuration": "./syntaxes/lsl-language-configuration.json"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "lsl",
+        "path": "./snippets/lsl.json"
+      }
+    ],
+    "jsonValidation": [
+      {
+        "fileMatch": "package.json",
+        "url": "http://json.schemastore.org/package"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Linden Lab Viewer Theme",
+        "uiTheme": "vs",
+        "path": "./themes/LSL.tmTheme"
+      }
+    ]
+  },
+  "menus": {
+    "editor/context": [
+      {
+        "command": "extension.build",
+        "when": "editorLangId == lsl"
+      }
+    ]
+  },
+  "commands": [
+    {
+      "command": "extension.build",
+      "title": "Build",
+      "category": "LSL",
+      "icon": {
+//      "light": "./icons/lsl.light.png",
+//      "dark": "./icons/lsl.dark.png"
+      }
+    }
+  ],
+  "scripts": {
+    "vscode:prepublish": "tsc -p ./",
+    "compile": "tsc -p ./client && cd server && npm run compile && cd ..",
+    "update-vscode": "node ./node_modules/vscode/bin/install",
+    "postinstall": "node ./node_modules/vscode/bin/install && cd server && npm install"
+  }
 }
