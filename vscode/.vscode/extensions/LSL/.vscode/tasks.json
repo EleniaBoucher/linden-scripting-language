@@ -5,28 +5,10 @@
     "tasks": [
         {
             "taskName": "build",
-            "windows": {
-                "command": [
-                    "${cwd}\\bin\\windows\\lslint.exe",
-                    "-p",
-                    "${file}"
-                ]
-            },
-            "linux": {
-                "command": [
-                    "${cwd}/bin/osx/lslint",
-                    "-p",
-                    "${file}"
-                ]
-            },
-            "osx": {
-                "command": [
-                    "${cwd}/bin/linux/lslint",
-                    "-p",
-                    "${file}"
-                ]
-            },
+            "command": "lslint",
+            "args": ["-p", "${file}"],
             "isBuildCommand": true,
+            "isWatching": true,
             "problemMatcher": "$msCompile"
         }
     ],
