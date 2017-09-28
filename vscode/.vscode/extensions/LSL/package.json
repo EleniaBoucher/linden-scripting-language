@@ -1,11 +1,8 @@
 {
   "name": "LSL",
-  "displayName": "LSL",
   "version": "0.0.0",
-// "license": "___",
-  "description": "LSL for vscode",
+  "description": "Linden Scripting Language of Second Life",
   "publisher": "buildersbrewery",
-// "icon": "path/to/icon.png",
   "galleryBanner": {
     "color": "#000000",
     "theme": "dark"
@@ -22,34 +19,17 @@
     "Languages"
   ],
   "engines": {
-    "vscode": "^1.16.0"
-  },
-  "extensionDependencies": [
-    "vscode.lsl"
-  ],
-  "dependencies": {
-    "vscode-languageclient": "^2.6.3"
+    "vscode": "*"
   },
   "activationEvents": [
     "onLanguage:lsl"
   ],
-  "configuration": {
-    "type": "object",
-    "title": "LSL configuration",
-    "properties": {
-      "lsl-server.maxNumberOfProblems": {
-        "type": "number",
-        "default": 100,
-        "description": "Controls the maximum number of problems produced by the server."
-      }
-    }
-  },
   "contributes": {
     "grammars": [
       {
         "language": "lsl",
         "scopeName": "source.lsl",
-        "path": "./syntaxes/LSL.tmLanguage"
+        "path": "./syntaxes/LSL.tmLanguage.json"
       }
     ],
     "languages": [
@@ -106,11 +86,5 @@
 //      "dark": "./icons/lsl.dark.png"
       }
     }
-  ],
-  "scripts": {
-    "vscode:prepublish": "tsc -p ./",
-    "compile": "tsc -p ./client && cd server && npm run compile && cd ..",
-    "update-vscode": "node ./node_modules/vscode/bin/install",
-    "postinstall": "node ./node_modules/vscode/bin/install && cd server && npm install"
-  }
+  ]
 }
