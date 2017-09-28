@@ -32,13 +32,13 @@ contexts:
     - include: lsl_comments
 #   - include: lsl_strings
     - include: lsl_states
+#   TODO: remove lsl_user_functions from here as it enables them in other scopes like events or functions or whatever
     - include: lsl_user_functions
     - include: lsl_types
 #   - include: lsl_constants
 #   - include: numbers
 #   - include: operators
 #   - include: lists
-# TODO: global variables
   prototype:
     - include: lsl_comments
   lists:
@@ -52,6 +52,7 @@ contexts:
           pop: true
         - include: infunc
   lsl_comments:
+#   TODO: maybe add keywords here (TODO, FIXME, BUG, NOTE, CHANGED)
     - match: '//'
       scope: punctuation.definition.comment.line.double-slash.lsl
       push:
@@ -75,12 +76,12 @@ contexts:
         - match: '\*/'
           scope: punctuation.definition.comment.block.end.lsl
           pop: true
-# TODO: prevent multiple params for single-param events and vice versa
   event:
     - match: '\b({{lsl_event}})\b'
       captures:
         1: support.function.event.lsl
       push:
+#       TODO: prevent multiple params for single-param events and vice versa
         - match: '\('
           scope: punctuation.section.event.parameters.begin.lsl
           push:
@@ -100,36 +101,30 @@ contexts:
               pop: true
             - include: infunc
   flow_control:
+#   TODO: revisit scope naming guide
     - match: '\b(jump)\s+({{lsl_word}})(;)'
       captures:
         1: 'keyword.control.flow.lsl'
         2: 'meta.target.label.lsl'
-        3: 'punctuation.separator.lsl'
+        3: 'punctuation.terminator.lsl'
+#   TODO: revisit scope naming guide
     - match: '(@)({{lsl_word}})(;)'
       captures:
         1: 'keyword.control.flow.lsl'
         2: 'entity.name.target.lsl'
-        3: 'punctuation.separator.lsl'
-# TODO: prevent repitition of blocks within do-while
+        3: 'punctuation.terminator.lsl'
     - match: '\b(do)\b'
       captures:
         1: 'keyword.control.loop.lsl'
       push:
+#   TODO: prevent repitition of blocks within do-while
         - meta_scope: 'meta.do-while.lsl'
         - include: block-scope
         - match: '\b(while)\b'
           scope: 'keyword.control.loop.lsl'
-        - match: '\)'
-          scope: 'punctuation.section.group.end.lsl'
-        - match: '\('
-          scope: 'punctuation.section.group.begin.lsl'
-          push:
-            - meta_scope: 'meta.group.lsl'
-            - match: '(?=\))'
-              pop: true
-#           - include: expressions
+        - include: parentheses-block-scope
         - match: '(;)'
-          scope: 'punctuation.separator.lsl'
+          scope: 'punctuation.terminator.lsl'
           pop: true
     - match: '\b(return)\b'
       captures:
@@ -166,8 +161,12 @@ contexts:
         - match: '\)'
           scope: 'punctuation.section.group.end.lsl'
           pop: true
-#       - include: condition
-#       - include: start;condition;step
+#       TODO: condition
+#       TODO: start;condition;step
+#       TODO: condition & (condition)
+#       TODO: condition | (condition)
+#       TODO: condition && (condition)
+#       TODO: condition || (condition)
     - include: block-scope
   block-scope:
     - match: '\}'
@@ -190,11 +189,11 @@ contexts:
         3: entity.name.function.user-defined.lsl
       push:
         - match: '\('
-          scope: punctuation.definition.parameters.begin.lsl
+          scope: punctuation.section.parameters.begin.lsl
           push:
-#           - meta_scope: meta.parameters.lsl
+            - meta_scope: meta.parameters.lsl
             - match: '\)'
-              scope: punctuation.definition.parameters.end.lsl
+              scope: punctuation.section.parameters.end.lsl
               pop: true
             - include: parameters
         - match: '\}'
@@ -220,7 +219,7 @@ contexts:
     - match: '(?:\b((?:state)\s+{{lsl_word}})\b)(;)'
       captures:
         1: meta.target.class.state.lsl
-        2: punctuation.separator.lsl
+        2: punctuation.terminator.lsl
   lsl_constants:
     - match: '\b({{lsl_invalid_broken}})\b'
       captures:
@@ -255,6 +254,7 @@ contexts:
     - match: '\b({{lsl_constant_string}})\b'
       captures:
         1: constant.language.string.lsl
+#   TODO: add "punctuation.accessor" for vector.element
     - match: '\b({{lsl_constant_vector}})\b'
       captures:
         1: constant.language.vector.lsl
@@ -264,11 +264,11 @@ contexts:
       push:
         - match: '(\))(;)?'
           captures:
-            1: 'punctuation.definition.parameters.end.lsl'
-            2: 'punctuation.separator.komma.lsl'
+            1: 'punctuation.section.parameters.end.lsl'
+            2: 'punctuation.terminator.lsl'
           pop: true
         - match: '\('
-          scope: 'punctuation.definition.parameters.begin.lsl'
+          scope: 'punctuation.section.parameters.begin.lsl'
           push:
             - match: '(?=\))'
               pop: true
@@ -278,13 +278,13 @@ contexts:
             - include: numbers
             - include: operators
             - include: lsl_functions
-# TODO: prevent real binary, octal, hex numbers
   numbers:
+#   TODO: prevent real binary, octal, hex numbers
     - match: \b(?i:(\d+\.\d*(e[\-\+]?\d+)?))(?=[^A-Za-z_])
       scope: constant.numeric.float.lsl
+#   TODO: look-behind is not supported by new regex-engine
     - match: (?<=[^\w])(?i:(\.\d+(e[\-\+]?\d+)?))
       scope: constant.numeric.float.lsl
-      # TODO: look-behind is not supported by new regex-engine
     - match: \b(?i:(\d+e[\-\+]?\d+))
       scope: constant.numeric.float.lsl
     - match: \b(?i:(0x\h*))
@@ -364,8 +364,8 @@ contexts:
           scope: constant.character.escape.double-quote.lsl
         - match: '\\.'
           scope: invalid.illegal.constant.character.escape.lsl
-#       - include: 'scope:source.json'
-#       - include: 'scope:source.html'
+#       TODO: - include: 'scope:source.json'
+#       TODO: - include: 'scope:source.html'
   lsl_states:
     - match: '\b((?:state)\s+{{lsl_word}}|default)\b'
       captures:
