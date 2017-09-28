@@ -120,9 +120,9 @@ contexts:
         - match: '\b(while)\b'
           scope: 'keyword.control.loop.lsl'
         - match: '\)'
-          scope: 'punctuation.definition.group.end.lsl'
+          scope: 'punctuation.section.group.end.lsl'
         - match: '\('
-          scope: 'punctuation.definition.group.begin.lsl'
+          scope: 'punctuation.section.group.begin.lsl'
           push:
             - meta_scope: 'meta.group.lsl'
             - match: '(?=\))'
@@ -160,25 +160,28 @@ contexts:
         - include: block-scope
   parentheses-block-scope:
     - match: '\('
-      scope: 'punctuation.definition.group.begin.lsl'
+      scope: 'punctuation.section.group.begin.lsl'
       push:
         - meta_scope: meta.group.lsl
         - match: '\)'
-          scope: 'punctuation.definition.group.end.lsl'
+          scope: 'punctuation.section.group.end.lsl'
           pop: true
-#       - include: expressions
+#       - include: condition
+#       - include: start;condition;step
     - include: block-scope
   block-scope:
     - match: '\}'
-      scope: 'punctuation.definition.block.end.lsl'
+      scope: 'meta.block.lsl punctuation.section.block.end.lsl'
       pop: true
     - match: '\{'
-      scope: 'punctuation.definition.block.begin.lsl'
+      scope: 'punctuation.section.block.begin.lsl'
       push:
         - meta_scope: 'meta.block.lsl'
         - match: '(?=\})'
           pop: true
         - include: infunc
+    - match: '(?=\S)'
+      pop: true
   lsl_user_functions:
     - match: '(?:((?:\b({{lsl_storage_type}})\b\s+)?(?:\b({{lsl_word}})\b))(?=\s*\())'
       captures:
@@ -195,14 +198,14 @@ contexts:
               pop: true
             - include: parameters
         - match: '\}'
-          scope: punctuation.definition.block.end.lsl
+          scope: punctuation.section.block.end.lsl
           pop: true
         - match: '\{'
-          scope: punctuation.definition.block.begin.lsl
+          scope: punctuation.section.block.begin.lsl
           push:
             - meta_content_scope: meta.function.declaration.body.lsl
             - match: '(?=})'
-              scope: punctuation.definition.block.end.lsl
+              scope: punctuation.section.block.end.lsl
               pop: true
             - include: infunc
   infunc:
