@@ -16,7 +16,8 @@
   },
   "homepage": "https://github.com/buildersbrewery/linden-scripting-language#readme",
   "categories": [
-    "Languages"
+    "Languages",
+    "Snippets"
   ],
   "engines": {
     "vscode": "*"
