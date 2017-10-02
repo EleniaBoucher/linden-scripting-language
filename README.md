@@ -1,5 +1,9 @@
 # [Linden Scripting Language (LSL)](https://wiki.secondlife.com/wiki/LSL_Portal) syntax grammar, syntax highlighting and snippet files.
 
+![Maintained](https://img.shields.io/maintenance/yes/2017.svg?style=flat-square)
+[![Open issues](https://img.shields.io/github/issues-raw/buildersbrewery/linden-scripting-language.svg?style=flat-square)](https://github.com/buildersbrewery/linden-scripting-language/issues)
+[![Open pull requests](https://img.shields.io/github/issues-pr-raw/buildersbrewery/linden-scripting-language.svg?style=flat-square)](https://github.com/buildersbrewery/linden-scripting-language/pulls)
+
 ## About
 
 In this repository you can find the syntax grammar, syntax highlighting and snippet files for the [Linden Scripting Language (LSL)](https://wiki.secondlife.com/wiki/LSL_Portal) of [Second Life](https://www.secondlife.com) for different kinds of software.
