@@ -1,10 +1,18 @@
 {
-    "version": "0.9.1",
-    "command": "python",
+    "version": "0.0.0",
+    "command": "npm",
     "isShellCommand": true,
+    "showOutput": "silent",
+    "args": [
+        "run",
+        "compile",
+        "--loglevel",
+        "silent"
+    ],
     "tasks": [
         {
             "taskName": "build",
+//          TODO: fix lslint path based upon current OS
             "command": "lslint",
             "args": ["-p", "${file}"],
             "isBuildCommand": true,
