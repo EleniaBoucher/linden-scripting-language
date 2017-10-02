@@ -1,4 +1,9 @@
-.vscode/**/*
+.vscode/**
+.vscode-test/**
+out/test/**
 test/**
+src/**
+**/*.map
 .gitignore
+.travis.yml
 tsconfig.json
