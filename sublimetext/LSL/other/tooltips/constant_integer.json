@@ -15368,9 +15368,6 @@
             "llGetLinkMedia",
             "llClearPrimMedia",
             "llClearLinkMedia"
-        ],
-        "usage":
-        [
         ]
     },
     {
@@ -15773,9 +15770,6 @@
             "llGetLinkMedia",
             "llClearPrimMedia",
             "llClearLinkMedia"
-        ],
-        "usage":
-        [
         ]
     },
     {
@@ -15828,9 +15822,6 @@
             "llGetLinkMedia",
             "llClearPrimMedia",
             "llClearLinkMedia"
-        ],
-        "usage":
-        [
         ]
     },
     {
@@ -15883,9 +15874,6 @@
             "llGetLinkMedia",
             "llClearPrimMedia",
             "llClearLinkMedia"
-        ],
-        "usage":
-        [
         ]
     },
     {
@@ -15938,9 +15926,6 @@
             "llGetLinkMedia",
             "llClearPrimMedia",
             "llClearLinkMedia"
-        ],
-        "usage":
-        [
         ]
     },
     {
@@ -15993,9 +15978,6 @@
             "llGetLinkMedia",
             "llClearPrimMedia",
             "llClearLinkMedia"
-        ],
-        "usage":
-        [
         ]
     },
     {
