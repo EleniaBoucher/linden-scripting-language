@@ -608,7 +608,7 @@
         },
         "CHARACTER_STAY_WITHIN_PARCEL": {
             "prefix": "CHARACTER_STAY_WITHIN_PARCEL",
-            "body": "CHARACTER_STAY_WITHIN_PARCEL, ${|boolean stay,FALSE,TRUE|}, $0",
+            "body": "CHARACTER_STAY_WITHIN_PARCEL, ${|integer stay,FALSE,TRUE|}, $0",
             "description": "int (15)"
         },
         "CHARACTER_TYPE": {
@@ -4634,12 +4634,12 @@
         },
         "llListSort": {
             "prefix": "llListSort",
-            "body": "llListSort(${list src}, ${integer stride}, ${integer ascending})",
+            "body": "llListSort(${list src}, ${integer stride}, ${|integer ascending,FALSE,TRUE|})",
             "description": "(list) func"
         },
         "llListStatistics": {
             "prefix": "llListStatistics",
-            "body": "llListStatistics(${integer operation}, ${list src})",
+            "body": "llListStatistics(${|integer operation,LIST_STAT_GEOMETRIC_MEAN,LIST_STAT_MAX,LIST_STAT_MEAN,LIST_STAT_MEDIAN,LIST_STAT_MIN,LIST_STAT_NUM_COUNT,LIST_STAT_RANGE,LIST_STAT_STD_DEV,LIST_STAT_SUM,LIST_STAT_SUM_SQUARES|}, ${list src})",
             "description": "(float) func"
         },
         "llListen": {
@@ -4699,7 +4699,7 @@
         },
         "llManageEstateAccess": {
             "prefix": "llManageEstateAccess",
-            "body": "llManageEstateAccess(${integer action}, ${key id})",
+            "body": "llManageEstateAccess(${|integer action,ESTATE_ACCESS_ALLOWED_AGENT_ADD,ESTATE_ACCESS_ALLOWED_AGENT_REMOVE,ESTATE_ACCESS_ALLOWED_GROUP_ADD,ESTATE_ACCESS_ALLOWED_GROUP_REMOVE,ESTATE_ACCESS_BANNED_AGENT_ADD,ESTATE_ACCESS_BANNED_AGENT_REMOVE|}, ${key id})",
             "description": "(int) func"
         },
         "llMapDestination": {
@@ -4709,7 +4709,7 @@
         },
         "llMessageLinked": {
             "prefix": "llMessageLinked",
-            "body": "llMessageLinked(${integer linknum}, ${integer num}, ${string str}, ${key id});",
+            "body": "llMessageLinked(${|integer linknum,LINK_THIS,LINK_ROOT,LINK_SET,LINK_ALL_OTHERS,LINK_ALL_CHILDREN|}, ${integer num}, ${string str}, ${key id});",
             "description": "(void) func"
         },
         "llMinEventDelay": {
@@ -4724,7 +4724,7 @@
         },
         "llModifyLand": {
             "prefix": "llModifyLand",
-            "body": "llModifyLand(${integer action}, ${integer brush});",
+            "body": "llModifyLand(${|integer action,LAND_LEVEL,LAND_RAISE,LAND_LOWER,LAND_SMOOTH,LAND_NOISE,LAND_REVERT|}, ${integer brush});",
             "description": "(void) func"
         },
         "llMoveToTarget": {
@@ -4739,7 +4739,7 @@
         },
         "llOffsetTexture": {
             "prefix": "llOffsetTexture",
-            "body": "llOffsetTexture(${float u}, ${float v}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
+            "body": "llOffsetTexture(${float u}, ${float v}, ${|integer face,0,1,2,3,4,5,6,7,8|});",
             "description": "(void) func"
         },
         "llOpenRemoteDataChannel": {
@@ -4784,12 +4784,12 @@
         },
         "llPassCollisions": {
             "prefix": "llPassCollisions",
-            "body": "llPassCollisions(${integer pass});",
+            "body": "llPassCollisions(${|integer pass,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llPassTouches": {
             "prefix": "llPassTouches",
-            "body": "llPassTouches(${integer pass});",
+            "body": "llPassTouches(${|integer pass,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llPatrolPoints": {
@@ -4824,7 +4824,7 @@
         },
         "llPushObject": {
             "prefix": "llPushObject",
-            "body": "llPushObject(${key id}, ${vector impulse}, ${vector ang_impulse}, ${integer local});",
+            "body": "llPushObject(${key id}, ${vector impulse}, ${vector ang_impulse}, ${|integer local,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llReadKeyValue": {
@@ -4884,7 +4884,7 @@
         },
         "llRequestAgentData": {
             "prefix": "llRequestAgentData",
-            "body": "llRequestAgentData(${key id}, ${integer data})",
+            "body": "llRequestAgentData(${key id}, ${|integer data,DATA_ONLINE,DATA_NAME,DATA_BORN,DATA_PAYINFO|})",
             "description": "(key) func"
         },
         "llRequestDisplayName": {
@@ -4914,7 +4914,7 @@
         },
         "llRequestSimulatorData": {
             "prefix": "llRequestSimulatorData",
-            "body": "llRequestSimulatorData(${string simulator}, ${integer data})",
+            "body": "llRequestSimulatorData(${string simulator}, ${|integer data,DATA_SIM_POS,DATA_SIM_STATUS,DATA_SIM_RATING|})",
             "description": "(key) func"
         },
         "llRequestURL": {
@@ -4964,7 +4964,7 @@
         },
         "llReturnObjectsByOwner": {
             "prefix": "llReturnObjectsByOwner",
-            "body": "llReturnObjectsByOwner(${key owner}, ${integer scope})",
+            "body": "llReturnObjectsByOwner(${key owner}, ${|integer scope,OBJECT_RETURN_PARCEL,OBJECT_RETURN_PARCEL_OWNER,OBJECT_RETURN_REGION|})",
             "description": "(int) func"
         },
         "llRezAtRoot": {
@@ -5069,7 +5069,7 @@
         },
         "llScriptProfiler": {
             "prefix": "llScriptProfiler",
-            "body": "llScriptProfiler(${integer flags});",
+            "body": "llScriptProfiler(${|integer flags,PROFILE_NONE,PROFILE_SCRIPT_MEMORY|});",
             "description": "(void) func"
         },
         "llSendRemoteData": {
@@ -5099,12 +5099,12 @@
         },
         "llSetAngularVelocity": {
             "prefix": "llSetAngularVelocity",
-            "body": "llSetAngularVelocity(${vector angular_velocity}, ${integer local});",
+            "body": "llSetAngularVelocity(${vector angular_velocity}, ${|integer local,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llSetAnimationOverride": {
             "prefix": "llSetAnimationOverride",
-            "body": "llSetAnimationOverride(${string anim_state}, ${string anim});",
+            "body": "llSetAnimationOverride(${|string anim_state,\"Crouching\",\"CrouchWalking\",\"Falling Down\",\"Flying\",\"FlyingSlow\",\"Hovering\",\"Hovering Down\",\"Hovering Up\",\"Jumping\",\"Landing\",\"PreJumping\",\"Running\",\"Sitting\",\"Sitting on Ground\",\"Standing\",\"Standing Up\",\"Striding\",\"Soft Landing\",\"Taking Off\",\"Turning Left\",\"Turning Right\",\"Walking\"|}, ${string anim});",
             "description": "(void) func"
         },
         "llSetBuoyancy": {
@@ -5129,7 +5129,7 @@
         },
         "llSetClickAction": {
             "prefix": "llSetClickAction",
-            "body": "llSetClickAction(${integer action});",
+            "body": "llSetClickAction(${|integer action,CLICK_ACTION_NONE,CLICK_ACTION_TOUCH,CLICK_ACTION_SIT,CLICK_ACTION_BUY,CLICK_ACTION_PAY,CLICK_ACTION_OPEN,CLICK_ACTION_PLAY,CLICK_ACTION_OPEN_MEDIA,CLICK_ACTION_ZOOM|});",
             "description": "(void) func"
         },
         "llSetColor": {
@@ -5139,7 +5139,7 @@
         },
         "llSetContentType": {
             "prefix": "llSetContentType",
-            "body": "llSetContentType(${key request_id}, ${integer content_type});",
+            "body": "llSetContentType(${key request_id}, ${|integer content_type,CONTENT_TYPE_TEXT,CONTENT_TYPE_HTML,CONTENT_TYPE_XML,CONTENT_TYPE_XHTML,CONTENT_TYPE_ATOM,CONTENT_TYPE_JSON,CONTENT_TYPE_LLSD,CONTENT_TYPE_FORM,CONTENT_TYPE_RSS|});",
             "description": "(void) func"
         },
         "llSetDamage": {
@@ -5149,12 +5149,12 @@
         },
         "llSetForce": {
             "prefix": "llSetForce",
-            "body": "llSetForce(${vector force}, ${integer local});",
+            "body": "llSetForce(${vector force}, ${|integer local,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llSetForceAndTorque": {
             "prefix": "llSetForceAndTorque",
-            "body": "llSetForceAndTorque(${vector force}, ${vector torque}, ${integer local});",
+            "body": "llSetForceAndTorque(${vector force}, ${vector torque}, ${|integer local,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llSetHoverHeight": {
@@ -5169,7 +5169,7 @@
         },
         "llSetLinkAlpha": {
             "prefix": "llSetLinkAlpha",
-            "body": "llSetLinkAlpha(${integer linknumber}, ${float alpha}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
+            "body": "llSetLinkAlpha(${|integer linknumber,LINK_THIS,LINK_ROOT,LINK_ALL_CHILDREN,LINK_SET,LINK_ALL_OTHERS|}, ${float alpha}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
             "description": "(void) func"
         },
         "llSetLinkCamera": {
@@ -5179,7 +5179,7 @@
         },
         "llSetLinkColor": {
             "prefix": "llSetLinkColor",
-            "body": "llSetLinkColor(${integer linknumber}, ${vector color}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
+            "body": "llSetLinkColor(${|integer linknumber,LINK_THIS,LINK_ROOT,LINK_ALL_CHILDREN,LINK_SET,LINK_ALL_OTHERS|}, ${vector color}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
             "description": "(void) func"
         },
         "llSetLinkMedia": {
@@ -5189,17 +5189,17 @@
         },
         "llSetLinkPrimitiveParams": {
             "prefix": "llSetLinkPrimitiveParams",
-            "body": "llSetLinkPrimitiveParams(${integer linknumber}, ${list rules});",
+            "body": "llSetLinkPrimitiveParams(${|integer linknumber,LINK_THIS,LINK_ROOT,LINK_ALL_CHILDREN,LINK_SET,LINK_ALL_OTHERS|}, ${list rules});",
             "description": "(void) func"
         },
         "llSetLinkPrimitiveParamsFast": {
             "prefix": "llSetLinkPrimitiveParamsFast",
-            "body": "llSetLinkPrimitiveParamsFast(${integer linknumber}, ${list rules});",
+            "body": "llSetLinkPrimitiveParamsFast(${|integer linknumber,LINK_THIS,LINK_ROOT,LINK_ALL_CHILDREN,LINK_SET,LINK_ALL_OTHERS|}, ${list rules});",
             "description": "(void) func"
         },
         "llSetLinkTexture": {
             "prefix": "llSetLinkTexture",
-            "body": "llSetLinkTexture(${integer linknumber}, ${string texture}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
+            "body": "llSetLinkTexture(${|integer linknumber,LINK_THIS,LINK_ROOT,LINK_ALL_CHILDREN,LINK_SET,LINK_ALL_OTHERS|}, ${string texture}, ${|integer face,ALL_SIDES,0,1,2,3,4,5,6,7,8|});",
             "description": "(void) func"
         },
         "llSetLinkTextureAnim": {
@@ -5279,7 +5279,7 @@
         },
         "llSetScriptState": {
             "prefix": "llSetScriptState",
-            "body": "llSetScriptState(${string name}, ${integer run});",
+            "body": "llSetScriptState(${string name}, ${|integer run,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llSetSitText": {
@@ -5289,7 +5289,7 @@
         },
         "llSetSoundQueueing": {
             "prefix": "llSetSoundQueueing",
-            "body": "llSetSoundQueueing(${integer queue});",
+            "body": "llSetSoundQueueing(${|integer queue,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llSetSoundRadius": {
@@ -5299,7 +5299,7 @@
         },
         "llSetStatus": {
             "prefix": "llSetStatus",
-            "body": "llSetStatus(${integer status}, ${integer value});",
+            "body": "llSetStatus(${|integer status,STATUS_PHYSICS,STATUS_ROTATE_X,STATUS_ROTATE_Y,STATUS_ROTATE_Z,STATUS_ROTATE_Z,STATUS_PHANTOM,STATUS_SANDBOX,STATUS_BLOCK_GRAB,STATUS_DIE_AT_EDGE,STATUS_RETURN_AT_EDGE,STATUS_CAST_SHADOWS,STATUS_BLOCK_GRAB_OBJECT|}, ${integer value});",
             "description": "(void) func"
         },
         "llSetText": {
@@ -5324,7 +5324,7 @@
         },
         "llSetTorque": {
             "prefix": "llSetTorque",
-            "body": "llSetTorque(${vector torque}, ${integer local});",
+            "body": "llSetTorque(${vector torque}, ${|integer local,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llSetTouchText": {
@@ -5339,27 +5339,27 @@
         },
         "llSetVehicleFloatParam": {
             "prefix": "llSetVehicleFloatParam",
-            "body": "llSetVehicleFloatParam(${integer param}, ${float value});",
+            "body": "llSetVehicleFloatParam(${|integer param,VEHICLE_ANGULAR_DEFLECTION_EFFICIENCY,VEHICLE_ANGULAR_DEFLECTION_TIMESCALE,VEHICLE_ANGULAR_MOTOR_DECAY_TIMESCALE,VEHICLE_ANGULAR_MOTOR_TIMESCALE,VEHICLE_BANKING_EFFICIENCY,VEHICLE_BANKING_MIX,VEHICLE_BANKING_TIMESCALE,VEHICLE_BUOYANCY,VEHICLE_HOVER_HEIGHT,VEHICLE_HOVER_EFFICIENCY,VEHICLE_HOVER_TIMESCALE,VEHICLE_LINEAR_DEFLECTION_EFFICIENCY,VEHICLE_LINEAR_DEFLECTION_TIMESCALE,VEHICLE_LINEAR_MOTOR_DECAY_TIMESCALE,VEHICLE_LINEAR_MOTOR_TIMESCALE,VEHICLE_VERTICAL_ATTRACTION_EFFICIENCY,VEHICLE_VERTICAL_ATTRACTION_TIMESCALE|}, ${float value});",
             "description": "(void) func"
         },
         "llSetVehicleRotationParam": {
             "prefix": "llSetVehicleRotationParam",
-            "body": "llSetVehicleRotationParam(${integer param}, ${rotation rot});",
+            "body": "llSetVehicleRotationParam(${|integer param,VEHICLE_REFERENCE_FRAME|}, ${rotation rot});",
             "description": "(void) func"
         },
         "llSetVehicleType": {
             "prefix": "llSetVehicleType",
-            "body": "llSetVehicleType(${integer type});",
+            "body": "llSetVehicleType(${|integer type,VEHICLE_TYPE_NONE,VEHICLE_TYPE_SLED,VEHICLE_TYPE_CAR,VEHICLE_TYPE_BOAT,VEHICLE_TYPE_AIRPLANE,VEHICLE_TYPE_BALLOON|});",
             "description": "(void) func"
         },
         "llSetVehicleVectorParam": {
             "prefix": "llSetVehicleVectorParam",
-            "body": "llSetVehicleVectorParam(${integer param}, ${vector vec});",
+            "body": "llSetVehicleVectorParam(${|integer param,VEHICLE_ANGULAR_FRICTION_TIMESCALE,VEHICLE_ANGULAR_MOTOR_DIRECTION,VEHICLE_LINEAR_FRICTION_TIMESCALE,VEHICLE_LINEAR_MOTOR_DIRECTION,VEHICLE_LINEAR_MOTOR_OFFSET|}, ${vector vec});",
             "description": "(void) func"
         },
         "llSetVelocity": {
             "prefix": "llSetVelocity",
-            "body": "llSetVelocity(${vector velocity}, ${integer local});",
+            "body": "llSetVelocity(${vector velocity}, ${|integer local,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llShout": {
@@ -5434,7 +5434,7 @@
         },
         "llStringTrim": {
             "prefix": "llStringTrim",
-            "body": "llStringTrim(${string src}, ${integer trim_type})",
+            "body": "llStringTrim(${string src}, ${|integer trim_type,STRING_TRIM,STRING_TRIM_HEAD,STRING_TRIM_TAIL|})",
             "description": "(str) func"
         },
         "llSubStringIndex": {
@@ -5549,7 +5549,7 @@
         },
         "llVolumeDetect": {
             "prefix": "llVolumeDetect",
-            "body": "llVolumeDetect(${integer detect});",
+            "body": "llVolumeDetect(${|integer detect,FALSE,TRUE|});",
             "description": "(void) func"
         },
         "llWanderWithin": {
