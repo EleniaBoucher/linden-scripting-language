@@ -6,7 +6,7 @@
     "keywords": [
         "lsl",
         "linden-scripting-language",
-        "lslint",
+//      "lslint",
         "sl",
         "second-life"
     ],
@@ -25,7 +25,7 @@
     "homepage": "https://github.com/buildersbrewery/linden-scripting-language#readme",
     "categories": [
         "Languages",
-        "Linters",
+//      "Linters",
         "Snippets",
         "Themes"
     ],
@@ -65,12 +65,12 @@
                 "path": "./snippets/lsl.json"
             }
         ],
-        "jsonValidation": [
-            {
-                "fileMatch": "package.json",
-                "url": "http://json.schemastore.org/package"
-            }
-        ],
+//      "jsonValidation": [
+//          {
+//              "fileMatch": "package.json",
+//              "url": "http://json.schemastore.org/package"
+//          }
+//      ],
         "themes": [
             {
                 "label": "Linden Lab Viewer Theme",
@@ -78,37 +78,38 @@
                 "path": "./themes/LSL.tmTheme"
             }
         ]
-    },
-    "menus": {
-        "editor/context": [
-            {
-                "command": "extension.build",
-                "when": "editorLangId == lsl"
-            }
-        ]
-    },
-    "commands": [
-        {
-            "command": "extension.build",
-            "title": "Build",
-            "category": "LSL",
-            "icon": {
+    }
+//  },
+//  "menus": {
+//      "editor/context": [
+//          {
+//              "command": "extension.build",
+//              "when": "editorLangId == lsl"
+//          }
+//      ]
+//  },
+//  "commands": [
+//      {
+//          "command": "extension.build",
+//          "title": "Build",
+//          "category": "LSL",
+//          "icon": {
 //      "light": "./icons/lsl.light.png",
 //      "dark": "./icons/lsl.dark.png"
-            }
-        }
-    ],
-    "scripts": {
-        "vscode:prepublish": "tsc -p ./",
-        "compile": "tsc -watch -p ./",
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "tslint ./src/*"
-    },
-    "devDependencies": {
-        "typescript": "^2.1.4",
-        "vscode": "^1.16.0",
-        "mocha": "^2.3.3",
-        "@types/node": "^6.0.51",
-        "@types/mocha": "^2.2.32"
-    }
+//          }
+//      }
+//  ],
+//  "scripts": {
+//      "vscode:prepublish": "tsc -p ./",
+//      "compile": "tsc -watch -p ./",
+//      "postinstall": "node ./node_modules/vscode/bin/install",
+//      "test": "tslint ./src/*"
+//  },
+//  "devDependencies": {
+//      "typescript": "^2.1.4",
+//      "vscode": "^1.16.0",
+//      "mocha": "^2.3.3",
+//      "@types/node": "^6.0.51",
+//      "@types/mocha": "^2.2.32"
+//  }
 }
