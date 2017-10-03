@@ -14460,7 +14460,55 @@
         },
         "name": "PRIM_MEDIA_ALT_IMAGE_ENABLE",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_ALT_IMAGE_ENABLE, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_ALT_IMAGE_ENABLE]);"
+        ]
     },
     {
         "description":
@@ -14469,7 +14517,57 @@
         },
         "name": "PRIM_MEDIA_CONTROLS",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS, integer control]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS, PRIM_MEDIA_CONTROLS_STANDARD]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS, PRIM_MEDIA_CONTROLS_MINI]);",
+            "integer control = llGetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS]);"
+        ]
     },
     {
         "description":
@@ -14478,7 +14576,55 @@
         },
         "name": "PRIM_MEDIA_CURRENT_URL",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_CURRENT_URL, string current_url]);",
+            "string current_url = llGetPrimMediaParams(integer face, [PRIM_MEDIA_CURRENT_URL]);"
+        ]
     },
     {
         "description":
@@ -14487,7 +14633,55 @@
         },
         "name": "PRIM_MEDIA_HOME_URL",
         "type": "integer",
-        "value": "3"
+        "value": "3",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_HOME_URL, string home_url]);",
+            "string home_url = llGetPrimMediaParams(integer face, [PRIM_MEDIA_HOME_URL]);"
+        ]
     },
     {
         "description":
@@ -14496,7 +14690,55 @@
         },
         "name": "PRIM_MEDIA_AUTO_LOOP",
         "type": "integer",
-        "value": "4"
+        "value": "4",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_LOOP, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_LOOP]);"
+        ]
     },
     {
         "description":
@@ -14505,7 +14747,55 @@
         },
         "name": "PRIM_MEDIA_AUTO_PLAY",
         "type": "integer",
-        "value": "5"
+        "value": "5",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_PLAY, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_PLAY]);"
+        ]
     },
     {
         "description":
@@ -14514,7 +14804,55 @@
         },
         "name": "PRIM_MEDIA_AUTO_SCALE",
         "type": "integer",
-        "value": "6"
+        "value": "6",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_SCALE, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_SCALE]);"
+        ]
     },
     {
         "description":
@@ -14523,7 +14861,55 @@
         },
         "name": "PRIM_MEDIA_AUTO_ZOOM",
         "type": "integer",
-        "value": "7"
+        "value": "7",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_ZOOM, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_AUTO_ZOOM]);"
+        ]
     },
     {
         "description":
@@ -14532,7 +14918,55 @@
         },
         "name": "PRIM_MEDIA_FIRST_CLICK_INTERACT",
         "type": "integer",
-        "value": "8"
+        "value": "8",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_FIRST_CLICK_INTERACT, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_FIRST_CLICK_INTERACT]);"
+        ]
     },
     {
         "description":
@@ -14541,7 +14975,55 @@
         },
         "name": "PRIM_MEDIA_WIDTH_PIXELS",
         "type": "integer",
-        "value": "9"
+        "value": "9",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_WIDTH_PIXELS, integer width]);",
+            "integer width = llGetPrimMediaParams(integer face, [PRIM_MEDIA_WIDTH_PIXELS]);"
+        ]
     },
     {
         "description":
@@ -14550,7 +15032,55 @@
         },
         "name": "PRIM_MEDIA_HEIGHT_PIXELS",
         "type": "integer",
-        "value": "10"
+        "value": "10",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_HEIGHT_PIXELS, integer height]);",
+            "integer height = llGetPrimMediaParams(integer face, [PRIM_MEDIA_HEIGHT_PIXELS]);"
+        ]
     },
     {
         "description":
@@ -14559,7 +15089,55 @@
         },
         "name": "PRIM_MEDIA_WHITELIST_ENABLE",
         "type": "integer",
-        "value": "11"
+        "value": "11",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_WHITELIST_ENABLE, integer boolean]);",
+            "integer boolean = llGetPrimMediaParams(integer face, [PRIM_MEDIA_WHITELIST_ENABLE]);"
+        ]
     },
     {
         "description":
@@ -14568,7 +15146,55 @@
         },
         "name": "PRIM_MEDIA_WHITELIST",
         "type": "integer",
-        "value": "12"
+        "value": "12",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_WHITELIST, string csv]);",
+            "string csv = llGetPrimMediaParams(integer face, [PRIM_MEDIA_WHITELIST]);"
+        ]
     },
     {
         "description":
@@ -14577,7 +15203,59 @@
         },
         "name": "PRIM_MEDIA_PERMS_INTERACT",
         "type": "integer",
-        "value": "13"
+        "value": "13",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, integer perms]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_NONE]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_OWNER]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_GROUP]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_ANYONE]);",
+            "integer perms = llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT]);"
+        ]
     },
     {
         "description":
@@ -14586,7 +15264,59 @@
         },
         "name": "PRIM_MEDIA_PERMS_CONTROL",
         "type": "integer",
-        "value": "14"
+        "value": "14",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, integer perms]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_NONE]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_OWNER]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_GROUP]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_ANYONE]);",
+            "integer perms = llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL]);"
+        ]
     },
     {
         "description":
@@ -14595,7 +15325,53 @@
         },
         "name": "PRIM_MEDIA_PARAM_MAX",
         "type": "integer",
-        "value": "14"
+        "value": "14",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+        ]
     },
     {
         "description":
@@ -14604,7 +15380,55 @@
         },
         "name": "PRIM_MEDIA_CONTROLS_STANDARD",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS, PRIM_MEDIA_CONTROLS_STANDARD]);",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS]) == PRIM_MEDIA_CONTROLS_STANDARD)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14613,7 +15437,55 @@
         },
         "name": "PRIM_MEDIA_CONTROLS_MINI",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS, PRIM_MEDIA_CONTROLS_MINI]);",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_CONTROLS]) == PRIM_MEDIA_CONTROLS_MINI)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14622,7 +15494,57 @@
         },
         "name": "PRIM_MEDIA_PERM_NONE",
         "type": "integer",
-        "value": "0x0"
+        "value": "0x0",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_NONE]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_NONE]);",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT]) == PRIM_MEDIA_PERM_NONE)\n{\n\t; // do something\n}",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL]) == PRIM_MEDIA_PERM_NONE)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14631,7 +15553,57 @@
         },
         "name": "PRIM_MEDIA_PERM_OWNER",
         "type": "integer",
-        "value": "0x1"
+        "value": "0x1",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_OWNER]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_OWNER]);",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT]) == PRIM_MEDIA_PERM_OWNER)\n{\n\t; // do something\n}",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL]) == PRIM_MEDIA_PERM_OWNER)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14640,7 +15612,57 @@
         },
         "name": "PRIM_MEDIA_PERM_GROUP",
         "type": "integer",
-        "value": "0x2"
+        "value": "0x2",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_GROUP]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_GROUP]);",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT]) == PRIM_MEDIA_PERM_GROUP)\n{\n\t; // do something\n}",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL]) == PRIM_MEDIA_PERM_GROUP)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14649,7 +15671,57 @@
         },
         "name": "PRIM_MEDIA_PERM_ANYONE",
         "type": "integer",
-        "value": "0x4"
+        "value": "0x4",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT, PRIM_MEDIA_PERM_ANYONE]);",
+            "integer status = llSetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL, PRIM_MEDIA_PERM_ANYONE]);",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_INTERACT]) == PRIM_MEDIA_PERM_ANYONE)\n{\n\t; // do something\n}",
+            "if (llGetPrimMediaParams(integer face, [PRIM_MEDIA_PERMS_CONTROL]) == PRIM_MEDIA_PERM_ANYONE)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14658,7 +15730,53 @@
         },
         "name": "PRIM_MEDIA_MAX_URL_LENGTH",
         "type": "integer",
-        "value": "1024"
+        "value": "1024",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+        ]
     },
     {
         "description":
@@ -14667,7 +15785,53 @@
         },
         "name": "PRIM_MEDIA_MAX_WHITELIST_SIZE",
         "type": "integer",
-        "value": "1024"
+        "value": "1024",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+        ]
     },
     {
         "description":
@@ -14676,7 +15840,53 @@
         },
         "name": "PRIM_MEDIA_MAX_WHITELIST_COUNT",
         "type": "integer",
-        "value": "64"
+        "value": "64",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+        ]
     },
     {
         "description":
@@ -14685,7 +15895,53 @@
         },
         "name": "PRIM_MEDIA_MAX_WIDTH_PIXELS",
         "type": "integer",
-        "value": "2048"
+        "value": "2048",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+        ]
     },
     {
         "description":
@@ -14694,7 +15950,53 @@
         },
         "name": "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
         "type": "integer",
-        "value": "2048"
+        "value": "2048",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+        ]
     },
     {
         "description":
@@ -14703,7 +16005,54 @@
         },
         "name": "STATUS_OK",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_OK)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14712,7 +16061,54 @@
         },
         "name": "STATUS_MALFORMED_PARAMS",
         "type": "integer",
-        "value": "1000"
+        "value": "1000",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_MALFORMED_PARAMS)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14721,7 +16117,54 @@
         },
         "name": "STATUS_TYPE_MISMATCH",
         "type": "integer",
-        "value": "1001"
+        "value": "1001",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_TYPE_MISMATCH)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14730,7 +16173,54 @@
         },
         "name": "STATUS_BOUNDS_ERROR",
         "type": "integer",
-        "value": "1002"
+        "value": "1002",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_BOUNDS_ERROR)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14739,7 +16229,54 @@
         },
         "name": "STATUS_NOT_FOUND",
         "type": "integer",
-        "value": "1003"
+        "value": "1003",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_NOT_FOUND)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14748,7 +16285,54 @@
         },
         "name": "STATUS_NOT_SUPPORTED",
         "type": "integer",
-        "value": "1004"
+        "value": "1004",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_INTERNAL_ERROR",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_NOT_SUPPORTED)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14757,7 +16341,54 @@
         },
         "name": "STATUS_INTERNAL_ERROR",
         "type": "integer",
-        "value": "1999"
+        "value": "1999",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_WHITELIST_FAILED",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_INTERNAL_ERROR)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14766,7 +16397,54 @@
         },
         "name": "STATUS_WHITELIST_FAILED",
         "type": "integer",
-        "value": "2001"
+        "value": "2001",
+        "related":
+        [
+            "PRIM_MEDIA_ALT_IMAGE_ENABLE",
+            "PRIM_MEDIA_CONTROLS",
+            "PRIM_MEDIA_CONTROLS_STANDARD",
+            "PRIM_MEDIA_CONTROLS_MINI",
+            "PRIM_MEDIA_CURRENT_URL",
+            "PRIM_MEDIA_HOME_URL",
+            "PRIM_MEDIA_MAX_URL_LENGTH",
+            "PRIM_MEDIA_AUTO_LOOP",
+            "PRIM_MEDIA_AUTO_PLAY",
+            "PRIM_MEDIA_AUTO_SCALE",
+            "PRIM_MEDIA_AUTO_ZOOM",
+            "PRIM_MEDIA_FIRST_CLICK_INTERACT",
+            "PRIM_MEDIA_WIDTH_PIXELS",
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+            "PRIM_MEDIA_HEIGHT_PIXELS",
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+            "PRIM_MEDIA_WHITELIST_ENABLE",
+            "PRIM_MEDIA_WHITELIST",
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+            "PRIM_MEDIA_PERMS_INTERACT",
+            "PRIM_MEDIA_PERMS_CONTROL",
+            "PRIM_MEDIA_PERM_NONE",
+            "PRIM_MEDIA_PERM_OWNER",
+            "PRIM_MEDIA_PERM_GROUP",
+            "PRIM_MEDIA_PERM_ANYONE",
+            "PRIM_MEDIA_PARAM_MAX",
+            "STATUS_OK",
+            "STATUS_MALFORMED_PARAMS",
+            "STATUS_TYPE_MISMATCH",
+            "STATUS_BOUNDS_ERROR",
+            "STATUS_NOT_FOUND",
+            "STATUS_NOT_SUPPORTED",
+            "STATUS_INTERNAL_ERROR",
+            "llSetPrimMediaParams",
+            "llGetPrimMediaParams",
+            "llSetLinkMedia",
+            "llGetLinkMedia",
+            "llClearPrimMedia",
+            "llClearLinkMedia"
+        ],
+        "usage":
+        [
+            "if (llSetPrimMediaParams(integer face, list params) == STATUS_WHITELIST_FAILED)\n{\n\t; // do something\n}"
+        ]
     },
     {
         "description":
@@ -14775,7 +16453,27 @@
         },
         "name": "CONTENT_TYPE_TEXT",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_TEXT);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14784,7 +16482,27 @@
         },
         "name": "CONTENT_TYPE_HTML",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_HTML);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14793,7 +16511,27 @@
         },
         "name": "CONTENT_TYPE_XML",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_XML);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14802,7 +16540,27 @@
         },
         "name": "CONTENT_TYPE_XHTML",
         "type": "integer",
-        "value": "3"
+        "value": "3",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_XHTML);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14811,7 +16569,27 @@
         },
         "name": "CONTENT_TYPE_ATOM",
         "type": "integer",
-        "value": "4"
+        "value": "4",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_ATOM);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14820,7 +16598,27 @@
         },
         "name": "CONTENT_TYPE_JSON",
         "type": "integer",
-        "value": "5"
+        "value": "5",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_JSON);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14829,7 +16627,27 @@
         },
         "name": "CONTENT_TYPE_LLSD",
         "type": "integer",
-        "value": "6"
+        "value": "6",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_FORM",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_LLSD);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14838,7 +16656,27 @@
         },
         "name": "CONTENT_TYPE_FORM",
         "type": "integer",
-        "value": "7"
+        "value": "7",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_RSS",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_FORM);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14847,7 +16685,27 @@
         },
         "name": "CONTENT_TYPE_RSS",
         "type": "integer",
-        "value": "8"
+        "value": "8",
+        "related":
+        [
+            "CONTENT_TYPE_TEXT",
+            "CONTENT_TYPE_HTML",
+            "CONTENT_TYPE_XML",
+            "CONTENT_TYPE_XHTML",
+            "CONTENT_TYPE_ATOM",
+            "CONTENT_TYPE_JSON",
+            "CONTENT_TYPE_LLSD",
+            "CONTENT_TYPE_FORM",
+            "http_request",
+            "http_response",
+            "llHTTPRequest",
+            "llHTTPResponse",
+            "llSetContentType"
+        ],
+        "usage":
+        [
+            "http_request(key request_id, string method, string body)\n{\n\tllSetContentType(request_id, CONTENT_TYPE_RSS);\n\tllHTTPResponse(request_id, 200, body);\n}"
+        ]
     },
     {
         "description":
@@ -14856,7 +16714,30 @@
         },
         "name": "KFM_COMMAND",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, integer command]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, KFM_CMD_PLAY]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, KFM_CMD_STOP]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, KFM_CMD_PAUSE]);"
+        ]
     },
     {
         "description":
@@ -14865,7 +16746,31 @@
         },
         "name": "KFM_MODE",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, integer mode]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_FORWARD]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_LOOP]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_PING_PONG]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_REVERSE]);"
+        ]
     },
     {
         "description":
@@ -14874,7 +16779,30 @@
         },
         "name": "KFM_DATA",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, integer fields]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, (KFM_ROTATION | KFM_TRANSLATION)]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, KFM_ROTATION]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, KFM_TRANSLATION]);"
+        ]
     },
     {
         "description":
@@ -14883,7 +16811,28 @@
         },
         "name": "KFM_FORWARD",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, integer mode]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_FORWARD]);"
+        ]
     },
     {
         "description":
@@ -14892,7 +16841,28 @@
         },
         "name": "KFM_LOOP",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, integer mode]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_LOOP]);"
+        ]
     },
     {
         "description":
@@ -14901,7 +16871,28 @@
         },
         "name": "KFM_PING_PONG",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, integer mode]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_PING_PONG]);"
+        ]
     },
     {
         "description":
@@ -14910,7 +16901,28 @@
         },
         "name": "KFM_REVERSE",
         "type": "integer",
-        "value": "3"
+        "value": "3",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, integer mode]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_MODE, KFM_REVERSE]);"
+        ]
     },
     {
         "description":
@@ -14919,7 +16931,29 @@
         },
         "name": "KFM_ROTATION",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, integer fields]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, (KFM_ROTATION | KFM_TRANSLATION)]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, KFM_ROTATION]);"
+        ]
     },
     {
         "description":
@@ -14928,7 +16962,29 @@
         },
         "name": "KFM_TRANSLATION",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, integer fields]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, (KFM_ROTATION | KFM_TRANSLATION)]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_DATA, KFM_TRANSLATION]);"
+        ]
     },
     {
         "description":
@@ -14937,7 +16993,28 @@
         },
         "name": "KFM_CMD_PLAY",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_STOP",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, integer command]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, KFM_CMD_PLAY]);"
+        ]
     },
     {
         "description":
@@ -14946,7 +17023,28 @@
         },
         "name": "KFM_CMD_STOP",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_PAUSE",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, integer command]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, KFM_CMD_STOP]);"
+        ]
     },
     {
         "description":
@@ -14955,7 +17053,28 @@
         },
         "name": "KFM_CMD_PAUSE",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "KFM_COMMAND",
+            "KFM_CMD_PLAY",
+            "KFM_CMD_STOP",
+            "KFM_MODE",
+            "KFM_FORWARD",
+            "KFM_LOOP",
+            "KFM_PING_PONG",
+            "KFM_REVERSE",
+            "KFM_DATA",
+            "KFM_ROTATION",
+            "KFM_TRANSLATION",
+            "llSetKeyframedMotion"
+        ],
+        "usage":
+        [
+            "llSetKeyframedMotion(list keyframes, list options);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, integer command]);",
+            "llSetKeyframedMotion(list keyframes, [KFM_COMMAND, KFM_CMD_PAUSE]);"
+        ]
     },
     {
         "description":
