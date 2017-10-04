@@ -33,14 +33,15 @@ class Lslint(Linter):
 
     @classmethod
     def which(cls, cmd):
+        lslint_basepath = os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint')
         if sublime.platform() == 'linux':
-            return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'linux', 'lslint')
+            return os.path.join(lslint_basepath, 'linux', 'lslint')
         elif sublime.platform() == 'osx':
-            return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'osx', 'lslint')
+            return os.path.join(lslint_basepath, 'osx', 'lslint')
         else:
             if platform.release() == 'XP':
-                return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows', 'lslint.exe')
+                return os.path.join(lslint_basepath, 'windows', 'lslint.exe')
             elif platform.architecture()[0] == '64bit':
-                return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows64', 'lslint.exe')
+                return os.path.join(lslint_basepath, 'windows64', 'lslint.exe')
             else:
-                return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows32', 'lslint.exe')
+                return os.path.join(lslint_basepath, 'windows32', 'lslint.exe')
