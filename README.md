@@ -33,6 +33,13 @@ In this repository you can find the syntax grammar, syntax highlighting and snip
 ## Disclaimer
 
 ```test
-Second Life® and Linden Scripting Language are trademarks of Linden Research, Inc.
-The Builder's Brewery is neither affiliated with nor sponsored by Linden Research.
+Second Life®, Linden Scripting Language and the inSL logo are trademarks of
+Linden Research, Inc. The Builder's Brewery is neither affiliated with nor
+sponsored by Linden Research.
 ```
+
+---
+
+<p align="center">
+<img src="http://s3.amazonaws.com/static-secondlife-com/_img/brand_center/insl_logo_color.gif" alt="inSL logo" width="204px" height="120px">
+</p>
