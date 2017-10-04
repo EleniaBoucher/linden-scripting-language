@@ -5,6 +5,7 @@
 import sublime
 from SublimeLinter.lint import Linter, util
 import os
+import platform
 
 class Lslint(Linter):
 
@@ -37,4 +38,9 @@ class Lslint(Linter):
         elif sublime.platform() == 'osx':
             return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'osx', 'lslint')
         else:
-            return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows', 'lslint.exe')
+            if platform.release() == 'XP':
+                return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows', 'lslint.exe')
+            elif platform.architecture()[0] == '64bit':
+                return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows64', 'lslint.exe')
+            else:
+                return os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint', 'windows32', 'lslint.exe')
