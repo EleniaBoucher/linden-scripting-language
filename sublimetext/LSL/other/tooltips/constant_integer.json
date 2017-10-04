@@ -17075,7 +17075,28 @@
         },
         "name": "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
         "type": "integer",
-        "value": "0x4"
+        "value": "0x4",
+        "related":
+        [
+            "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
+            "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
+            "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
+            "ESTATE_ACCESS_BANNED_AGENT_ADD",
+            "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
+            "PERMISSION_SILENT_ESTATE_MANAGEMENT",
+            "llAddToLandBanList",
+            "llAddToLandPassList",
+            "llManageEstateAccess",
+            "llRemoveFromLandBanList",
+            "llRemoveFromLandPassList",
+            "llResetLandBanList",
+            "llResetLandPassList"
+        ],
+        "usage":
+        [
+            "integer success = llManageEstateAccess(integer action, key avatar);",
+            "integer success = llManageEstateAccess(ESTATE_ACCESS_ALLOWED_AGENT_ADD, key avatar);"
+        ]
     },
     {
         "description":
@@ -17084,7 +17105,28 @@
         },
         "name": "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
         "type": "integer",
-        "value": "0x8"
+        "value": "0x8",
+        "related":
+        [
+            "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
+            "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
+            "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
+            "ESTATE_ACCESS_BANNED_AGENT_ADD",
+            "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
+            "PERMISSION_SILENT_ESTATE_MANAGEMENT",
+            "llAddToLandBanList",
+            "llAddToLandPassList",
+            "llManageEstateAccess",
+            "llRemoveFromLandBanList",
+            "llRemoveFromLandPassList",
+            "llResetLandBanList",
+            "llResetLandPassList"
+        ],
+        "usage":
+        [
+            "integer success = llManageEstateAccess(integer action, key avatar);",
+            "integer success = llManageEstateAccess(ESTATE_ACCESS_ALLOWED_AGENT_REMOVE, key avatar);"
+        ]
     },
     {
         "description":
@@ -17093,7 +17135,28 @@
         },
         "name": "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
         "type": "integer",
-        "value": "0x10"
+        "value": "0x10",
+        "related":
+        [
+            "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
+            "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
+            "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
+            "ESTATE_ACCESS_BANNED_AGENT_ADD",
+            "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
+            "PERMISSION_SILENT_ESTATE_MANAGEMENT",
+            "llAddToLandBanList",
+            "llAddToLandPassList",
+            "llManageEstateAccess",
+            "llRemoveFromLandBanList",
+            "llRemoveFromLandPassList",
+            "llResetLandBanList",
+            "llResetLandPassList"
+        ],
+        "usage":
+        [
+            "integer success = llManageEstateAccess(integer action, key avatar);",
+            "integer success = llManageEstateAccess(ESTATE_ACCESS_ALLOWED_GROUP_ADD, key avatar);"
+        ]
     },
     {
         "description":
@@ -17102,7 +17165,28 @@
         },
         "name": "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
         "type": "integer",
-        "value": "0x20"
+        "value": "0x20",
+        "related":
+        [
+            "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
+            "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
+            "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
+            "ESTATE_ACCESS_BANNED_AGENT_ADD",
+            "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
+            "PERMISSION_SILENT_ESTATE_MANAGEMENT",
+            "llAddToLandBanList",
+            "llAddToLandPassList",
+            "llManageEstateAccess",
+            "llRemoveFromLandBanList",
+            "llRemoveFromLandPassList",
+            "llResetLandBanList",
+            "llResetLandPassList"
+        ],
+        "usage":
+        [
+            "integer success = llManageEstateAccess(integer action, key avatar);",
+            "integer success = llManageEstateAccess(ESTATE_ACCESS_ALLOWED_GROUP_REMOVE, key avatar);"
+        ]
     },
     {
         "description":
@@ -17111,7 +17195,28 @@
         },
         "name": "ESTATE_ACCESS_BANNED_AGENT_ADD",
         "type": "integer",
-        "value": "0x40"
+        "value": "0x40",
+        "related":
+        [
+            "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
+            "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
+            "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
+            "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
+            "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
+            "PERMISSION_SILENT_ESTATE_MANAGEMENT",
+            "llAddToLandBanList",
+            "llAddToLandPassList",
+            "llManageEstateAccess",
+            "llRemoveFromLandBanList",
+            "llRemoveFromLandPassList",
+            "llResetLandBanList",
+            "llResetLandPassList"
+        ],
+        "usage":
+        [
+            "integer success = llManageEstateAccess(integer action, key avatar);",
+            "integer success = llManageEstateAccess(ESTATE_ACCESS_BANNED_AGENT_ADD, key avatar);"
+        ]
     },
     {
         "description":
@@ -17120,7 +17225,28 @@
         },
         "name": "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
         "type": "integer",
-        "value": "0x80"
+        "value": "0x80",
+        "related":
+        [
+            "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
+            "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
+            "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
+            "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
+            "ESTATE_ACCESS_BANNED_AGENT_ADD",
+            "PERMISSION_SILENT_ESTATE_MANAGEMENT",
+            "llAddToLandBanList",
+            "llAddToLandPassList",
+            "llManageEstateAccess",
+            "llRemoveFromLandBanList",
+            "llRemoveFromLandPassList",
+            "llResetLandBanList",
+            "llResetLandPassList"
+        ],
+        "usage":
+        [
+            "integer success = llManageEstateAccess(integer action, key avatar);",
+            "integer success = llManageEstateAccess(ESTATE_ACCESS_BANNED_AGENT_REMOVE, key avatar);"
+        ]
     },
     {
         "description":
@@ -17129,7 +17255,20 @@
         },
         "name": "PROFILE_NONE",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "PROFILE_SCRIPT_MEMORY",
+            "llGetMemoryLimit",
+            "llGetSPMaxMemory",
+            "llScriptProfiler",
+            "llSetMemoryLimit"
+        ],
+        "usage":
+        [
+            "llScriptProfiler(integer flags);",
+            "llScriptProfiler(PROFILE_NONE);"
+        ]
     },
     {
         "description":
@@ -17138,7 +17277,20 @@
         },
         "name": "PROFILE_SCRIPT_MEMORY",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "PROFILE_NONE",
+            "llGetMemoryLimit",
+            "llGetSPMaxMemory",
+            "llScriptProfiler",
+            "llSetMemoryLimit"
+        ],
+        "usage":
+        [
+            "llScriptProfiler(integer flags);",
+            "llScriptProfiler(PROFILE_SCRIPT_MEMORY);"
+        ]
     },
     {
         "description":
@@ -17147,7 +17299,29 @@
         },
         "name": "RCERR_UNKNOWN",
         "type": "integer",
-        "value": "-1"
+        "value": "-1",
+        "related":
+        [
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);",
+                "[key uuid, vector position, /* integer link_num, vector normal, */ RCERR_UNKNOWN] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17157,6 +17331,29 @@
         "name": "RCERR_SIM_PERF_LOW",
         "type": "integer",
         "value": "-2"
+        ,
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);",
+                "[key uuid, vector position, /* integer link_num, vector normal, */ RCERR_SIM_PERF_LOW] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17165,7 +17362,29 @@
         },
         "name": "RCERR_CAST_TIME_EXCEEDED",
         "type": "integer",
-        "value": "-3"
+        "value": "-3",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);",
+                "[key uuid, vector position, /* integer link_num, vector normal, */ RCERR_CAST_TIME_EXCEEDED] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17174,7 +17393,29 @@
         },
         "name": "RC_REJECT_TYPES",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, integer filter]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17183,7 +17424,29 @@
         },
         "name": "RC_DETECT_PHANTOM",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DETECT_PHANTOM, integer detect_phantom]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17192,7 +17455,29 @@
         },
         "name": "RC_DATA_FLAGS",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, integer flags]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17201,7 +17486,29 @@
         },
         "name": "RC_MAX_HITS",
         "type": "integer",
-        "value": "3"
+        "value": "3",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_MAX_HITS, integer max_hits]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17210,7 +17517,33 @@
         },
         "name": "RC_REJECT_AGENTS",
         "type": "integer",
-        "value": "0x1"
+        "value": "0x1",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, integer filter]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, RC_REJECT_AGENTS]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_AGENTS | RC_REJECT_PHYSICAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_AGENTS | RC_REJECT_NONPHYSICAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_AGENTS | RC_REJECT_LAND)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17219,7 +17552,33 @@
         },
         "name": "RC_REJECT_PHYSICAL",
         "type": "integer",
-        "value": "0x2"
+        "value": "0x2",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, integer filter]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, RC_REJECT_PHYSICAL]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_PHYSICAL | RC_REJECT_AGENTS)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_PHYSICAL | RC_REJECT_NONPHYSICAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_PHYSICAL | RC_REJECT_LAND)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
