@@ -29,3 +29,10 @@ In this repository you can find the syntax grammar, syntax highlighting and snip
 ### Bugs, issues & feature requests
 
 * Please [search for existing issues and pull requests](https://github.com/buildersbrewery/linden-scripting-language/issues/?q=is%3Aopen) before [using this link to open a new issue](https://github.com/buildersbrewery/linden-scripting-language/issues/new/?labels=discussion,watchlist&assignee=buildersbrewery).
+
+## Disclaimer
+
+```test
+Second Life® and Linden Scripting Language are trademarks of Linden Research, Inc.
+The Builder's Brewery is neither affiliated with nor sponsored by Linden Research.
+```
