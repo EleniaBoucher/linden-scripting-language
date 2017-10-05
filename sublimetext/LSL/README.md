@@ -17,6 +17,13 @@ then:
 
 :warning: Tooltips require **Sublime Text Build 3124+**.
 
+* Choose `Preferences > Settings`from the main menu and add the following to your user settings:
+  ```json
+  "mdpopups.sublime_user_lang_map": { "lsl": [["lsl"], ["LSL/syntaxes/LSL"]] },
+  "mdpopups.use_sublime_highlighter": true
+  ```
+  to have correct `LSL` syntax highlighting for the snippets and usage examples in tooltips.
+
 ### Linters
 
 Download the [latest release of `lslint`](https://github.com/Makopo/lslint/releases/latest) and unpack the binary files to the `LSL/bin/lslint` subfolder in your Sublime Text 3 Packages directory. Then:
