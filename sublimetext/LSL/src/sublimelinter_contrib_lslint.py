@@ -7,6 +7,21 @@ from SublimeLinter.lint import Linter, util
 import os
 import platform
 
+
+def get_lslint_path(lslint_localpath):
+
+    LSLINT_BASEPATH = os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint')
+
+    try:
+        LSLINT_FULLPATH = os.path.join(LSLINT_BASEPATH, lslint_localpath)
+        if os.access(LSLINT_FULLPATH, os.F_OK):
+            return LSLINT_FULLPATH
+    except Exception as e:
+        print('%s' % e)
+
+    return None
+
+
 class Lslint(Linter):
 
     syntax = ('lsl')
@@ -33,15 +48,20 @@ class Lslint(Linter):
 
     @classmethod
     def which(cls, cmd):
-        lslint_basepath = os.path.join(sublime.packages_path(), 'LSL', 'bin', 'lslint')
-        if sublime.platform() == 'linux':
-            return os.path.join(lslint_basepath, 'linux', 'lslint')
-        elif sublime.platform() == 'osx':
-            return os.path.join(lslint_basepath, 'osx', 'lslint')
+        SUBLIME_PLATFORM = sublime.platform()
+        OS_CMD = cmd + '.exe' if SUBLIME_PLATFORM == 'windows' else cmd
+        lslint_path = None
+        if SUBLIME_PLATFORM == 'windows':
+            lslint_path = get_lslint_path(os.path.join(
+                SUBLIME_PLATFORM if platform.release() == 'XP' else
+                SUBLIME_PLATFORM + platform.architecture()[0][:-3], OS_CMD
+            ))
         else:
-            if platform.release() == 'XP':
-                return os.path.join(lslint_basepath, 'windows', 'lslint.exe')
-            elif platform.architecture()[0] == '64bit':
-                return os.path.join(lslint_basepath, 'windows64', 'lslint.exe')
-            else:
-                return os.path.join(lslint_basepath, 'windows32', 'lslint.exe')
+            lslint_path = get_lslint_path(os.path.join(
+                SUBLIME_PLATFORM, OS_CMD
+            ))
+
+        if lslint_path is not None:
+            return lslint_path
+
+        return cmd
