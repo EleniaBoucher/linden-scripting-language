@@ -6,6 +6,7 @@
         "cmd":
         [
             "${packages}/LSL/bin/lslint/linux/lslint",
+            "-i",
             "-p",
             "${file}"
         ]
@@ -15,6 +16,7 @@
         "cmd":
         [
             "${packages}/LSL/bin/lslint/osx/lslint",
+            "-i",
             "-p",
             "${file}"
         ]
@@ -24,6 +26,7 @@
         "cmd":
         [
             "${packages}\\LSL\\bin\\lslint\\windows\\lslint.exe",
+            "-i",
             "-p",
             "${file}"
         ]
@@ -31,28 +34,31 @@
     "variants":
     [
         {
-            "name": "lslint (x32)",
+            "name": "lslint (Windows x32)",
             "cmd":
             [
                 "${packages}\\LSL\\bin\\lslint\\windows32\\lslint.exe",
+                "-i",
                 "-p",
                 "${file}"
             ]
         },
         {
-            "name": "lslint (x64)",
+            "name": "lslint (Windows x64)",
             "cmd":
             [
                 "${packages}\\LSL\\bin\\lslint\\windows64\\lslint.exe",
+                "-i",
                 "-p",
                 "${file}"
             ]
         },
         {
-            "name": "lslint (x32 for Windows XP)",
+            "name": "lslint (Windows XP)",
             "cmd":
             [
                 "${packages}\\LSL\\bin\\lslint\\windows\\lslint.exe",
+                "-i",
                 "-p",
                 "${file}"
             ]
