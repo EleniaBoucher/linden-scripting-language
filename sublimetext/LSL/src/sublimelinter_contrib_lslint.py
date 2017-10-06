@@ -25,11 +25,11 @@ def get_lslint_path(lslint_localpath):
 class Lslint(Linter):
 
     syntax = ('lsl')
-    cmd = 'lslint'
+    cmd = 'lslint -i'
     executable = 'lslint'
     version_args = '-V'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 0.4.2'
+    version_requirement = '>= 1.0.5'
     regex = r'''(?xi)
         (?:(?P<warning> WARN)|(?P<error>ERROR))\:\:\s
         \(\s*(?P<line>\d+),\s*(?P<col>\d+)\)\:\s
@@ -60,8 +60,6 @@ class Lslint(Linter):
             lslint_path = get_lslint_path(os.path.join(
                 SUBLIME_PLATFORM, OS_CMD
             ))
-
         if lslint_path is not None:
             return lslint_path
-
         return cmd
