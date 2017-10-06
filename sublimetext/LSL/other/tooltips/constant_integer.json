@@ -17587,7 +17587,33 @@
         },
         "name": "RC_REJECT_NONPHYSICAL",
         "type": "integer",
-        "value": "0x4"
+        "value": "0x4",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, integer filter]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, RC_REJECT_NONPHYSICAL]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_NONPHYSICAL | RC_REJECT_AGENTS)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_NONPHYSICAL | RC_REJECT_PHYSICAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_NONPHYSICAL | RC_REJECT_LAND)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17596,7 +17622,33 @@
         },
         "name": "RC_REJECT_LAND",
         "type": "integer",
-        "value": "0x8"
+        "value": "0x8",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, integer filter]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, RC_REJECT_LAND]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_LAND | RC_REJECT_AGENTS)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_LAND | RC_REJECT_PHYSICAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_REJECT_TYPES, (RC_REJECT_LAND | RC_REJECT_NONPHYSICAL)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17605,7 +17657,32 @@
         },
         "name": "RC_GET_NORMAL",
         "type": "integer",
-        "value": "0x1"
+        "value": "0x1",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_ROOT_KEY",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, integer flags]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, RC_GET_NORMAL]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, (RC_GET_NORMAL | RC_GET_ROOT_KEY)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, (RC_GET_NORMAL | RC_GET_LINK_NUM)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17614,7 +17691,32 @@
         },
         "name": "RC_GET_ROOT_KEY",
         "type": "integer",
-        "value": "0x2"
+        "value": "0x2",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_LINK_NUM",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, integer flags]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, RC_GET_ROOT_KEY]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, (RC_GET_ROOT_KEY | RC_GET_NORMAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, (RC_GET_ROOT_KEY | RC_GET_LINK_NUM)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "description":
@@ -17623,52 +17725,380 @@
         },
         "name": "RC_GET_LINK_NUM",
         "type": "integer",
-        "value": "0x4"
-    },
-    {
-        "name": "REQUIRE_LINE_OF_SIGHT",
-        "type": "integer",
-        "value": "2"
-    },
-    {
-        "name": "PURSUIT_FUZZ_FACTOR",
-        "type": "integer",
-        "value": "3"
-    },
-    {
-        "name": "PURSUIT_INTERCEPT",
-        "type": "integer",
-        "value": "4"
-    },
-    {
-        "name": "PURSUIT_GOAL_TOLERANCE",
-        "type": "integer",
-        "value": "5"
+        "value": "0x4",
+        "related":
+        [
+            "RCERR_UNKNOWN",
+            "RCERR_SIM_PERF_LOW",
+            "RCERR_CAST_TIME_EXCEEDED",
+            "RC_REJECT_TYPES",
+            "RC_REJECT_AGENTS",
+            "RC_REJECT_PHYSICAL",
+            "RC_REJECT_NONPHYSICAL",
+            "RC_REJECT_LAND",
+            "RC_DATA_FLAGS",
+            "RC_GET_NORMAL",
+            "RC_GET_ROOT_KEY",
+            "RC_MAX_HITS",
+            "RC_DETECT_PHANTOM"
+        ],
+        "usage":
+        [
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, list options);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, integer flags]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, RC_GET_LINK_NUM]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, (RC_GET_LINK_NUM | RC_GET_NORMAL)]);",
+            "list strided_values_and_status_code = llCastRay(vector start, vector end, [RC_DATA_FLAGS, (RC_GET_LINK_NUM | RC_GET_ROOT_KEY)]);",
+            "[key uuid, vector position, /* integer link_num, vector normal, */ integer status_code] = llCastRay(vector start, vector end, list options);"
+        ]
     },
     {
         "name": "PURSUIT_OFFSET",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "REQUIRE_LINE_OF_SIGHT",
+            "PURSUIT_FUZZ_FACTOR",
+            "PURSUIT_INTERCEPT",
+            "PURSUIT_GOAL_TOLERANCE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llPursue(key target, list options);",
+            "llPursue(key target, [PURSUIT_OFFSET, vector offset]);",
+            "llPursue(key target, [PURSUIT_OFFSET, ZERO_VECTOR]);"
+        ]
+    },
+    {
+        "name": "REQUIRE_LINE_OF_SIGHT",
+        "type": "integer",
+        "value": "2",
+        "related":
+        [
+            "PURSUIT_OFFSET",
+            "PURSUIT_FUZZ_FACTOR",
+            "PURSUIT_INTERCEPT",
+            "PURSUIT_GOAL_TOLERANCE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llPursue(key target, list options);",
+            "llPursue(key target, [REQUIRE_LINE_OF_SIGHT, integer boolean]);",
+            "llPursue(key target, [REQUIRE_LINE_OF_SIGHT, FALSE]);"
+        ]
+    },
+    {
+        "name": "PURSUIT_FUZZ_FACTOR",
+        "type": "integer",
+        "value": "3",
+        "related":
+        [
+            "PURSUIT_OFFSET",
+            "REQUIRE_LINE_OF_SIGHT",
+            "PURSUIT_INTERCEPT",
+            "PURSUIT_GOAL_TOLERANCE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llPursue(key target, list options);",
+            "llPursue(key target, [PURSUIT_FUZZ_FACTOR, float fuzz_factor]);",
+            "llPursue(key target, [PURSUIT_FUZZ_FACTOR, 0.0]);"
+        ]
+    },
+    {
+        "name": "PURSUIT_INTERCEPT",
+        "type": "integer",
+        "value": "4",
+        "related":
+        [
+            "PURSUIT_OFFSET",
+            "REQUIRE_LINE_OF_SIGHT",
+            "PURSUIT_FUZZ_FACTOR",
+            "PURSUIT_GOAL_TOLERANCE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llPursue(key target, list options);",
+            "llPursue(key target, [PURSUIT_INTERCEPT, integer boolean]);",
+            "llPursue(key target, [PURSUIT_INTERCEPT, FALSE]);"
+        ]
+    },
+    {
+        "name": "PURSUIT_GOAL_TOLERANCE",
+        "type": "integer",
+        "value": "5",
+        "related":
+        [
+            "PURSUIT_OFFSET",
+            "REQUIRE_LINE_OF_SIGHT",
+            "PURSUIT_FUZZ_FACTOR",
+            "PURSUIT_INTERCEPT",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llPursue(key target, list options);",
+            "llPursue(key target, [PURSUIT_GOAL_TOLERANCE, float tolerance]);",
+            "llPursue(key target, [PURSUIT_GOAL_TOLERANCE, 0.25]);",
+            "llPursue(key target, [PURSUIT_GOAL_TOLERANCE, 10.0]);"
+        ]
     },
     {
         "name": "FORCE_DIRECT_PATH",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llNavigateTo(vector pos, list options);",
+            "llNavigateTo(vector pos, [FORCE_DIRECT_PATH, integer boolean]);",
+            "llNavigateTo(vector pos, [FORCE_DIRECT_PATH, FALSE]);"
+        ]
     },
     {
         "name": "AVOID_CHARACTERS",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "CHARACTER_DESIRED_SPEED",
+            "CHARACTER_RADIUS",
+            "CHARACTER_LENGTH",
+            "CHARACTER_ORIENTATION",
+            "VERTICAL",
+            "HORIZONTAL",
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_FAST",
+            "TRAVERSAL_TYPE_NONE",
+            "CHARACTER_TYPE",
+            "CHARACTER_TYPE_NONE",
+            "CHARACTER_TYPE_A",
+            "CHARACTER_TYPE_B",
+            "CHARACTER_TYPE_C",
+            "CHARACTER_TYPE_D",
+            "CHARACTER_AVOIDANCE_MODE",
+            "AVOID_DYNAMIC_OBSTACLES",
+            "AVOID_NONE",
+            "CHARACTER_MAX_ACCEL",
+            "CHARACTER_MAX_DECEL",
+            "CHARACTER_DESIRED_TURN_SPEED",
+            "CHARACTER_MAX_TURN_RADIUS",
+            "CHARACTER_MAX_SPEED",
+            "CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES",
+            "CHARACTER_STAY_WITHIN_PARCEL",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter(list options);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_CHARACTERS]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);",
+            "llUpdateCharacter(list options);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_CHARACTERS]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);"
+        ]
     },
     {
         "name": "AVOID_DYNAMIC_OBSTACLES",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "CHARACTER_DESIRED_SPEED",
+            "CHARACTER_RADIUS",
+            "CHARACTER_LENGTH",
+            "CHARACTER_ORIENTATION",
+            "VERTICAL",
+            "HORIZONTAL",
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_FAST",
+            "TRAVERSAL_TYPE_NONE",
+            "CHARACTER_TYPE",
+            "CHARACTER_TYPE_NONE",
+            "CHARACTER_TYPE_A",
+            "CHARACTER_TYPE_B",
+            "CHARACTER_TYPE_C",
+            "CHARACTER_TYPE_D",
+            "CHARACTER_AVOIDANCE_MODE",
+            "AVOID_CHARACTERS",
+            "AVOID_NONE",
+            "CHARACTER_MAX_ACCEL",
+            "CHARACTER_MAX_DECEL",
+            "CHARACTER_DESIRED_TURN_SPEED",
+            "CHARACTER_MAX_TURN_RADIUS",
+            "CHARACTER_MAX_SPEED",
+            "CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES",
+            "CHARACTER_STAY_WITHIN_PARCEL",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter(list options);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_DYNAMIC_OBSTACLES]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);",
+            "llUpdateCharacter(list options);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_DYNAMIC_OBSTACLES]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);"
+        ]
     },
     {
         "name": "AVOID_NONE",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "CHARACTER_DESIRED_SPEED",
+            "CHARACTER_RADIUS",
+            "CHARACTER_LENGTH",
+            "CHARACTER_ORIENTATION",
+            "VERTICAL",
+            "HORIZONTAL",
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_FAST",
+            "TRAVERSAL_TYPE_NONE",
+            "CHARACTER_TYPE",
+            "CHARACTER_TYPE_NONE",
+            "CHARACTER_TYPE_A",
+            "CHARACTER_TYPE_B",
+            "CHARACTER_TYPE_C",
+            "CHARACTER_TYPE_D",
+            "CHARACTER_AVOIDANCE_MODE",
+            "AVOID_CHARACTERS",
+            "AVOID_DYNAMIC_OBSTACLES",
+            "CHARACTER_MAX_ACCEL",
+            "CHARACTER_MAX_DECEL",
+            "CHARACTER_DESIRED_TURN_SPEED",
+            "CHARACTER_MAX_TURN_RADIUS",
+            "CHARACTER_MAX_SPEED",
+            "CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES",
+            "CHARACTER_STAY_WITHIN_PARCEL",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter(list options);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_NONE]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);",
+            "llUpdateCharacter(list options);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_NONE]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);"
+        ]
     },
     {
         "description":
@@ -17677,7 +18107,38 @@
         },
         "name": "PU_EVADE_HIDDEN",
         "type": "integer",
-        "value": "7"
+        "value": "7",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_EVADE_HIDDEN)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17686,7 +18147,38 @@
         },
         "name": "PU_EVADE_SPOTTED",
         "type": "integer",
-        "value": "8"
+        "value": "8",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_EVADE_SPOTTED)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17695,7 +18187,38 @@
         },
         "name": "PU_FAILURE_INVALID_GOAL",
         "type": "integer",
-        "value": "3"
+        "value": "3",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_INVALID_GOAL)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17704,7 +18227,38 @@
         },
         "name": "PU_FAILURE_INVALID_START",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_INVALID_START)\n\t{\n\t\tllNavigateTo(<128,128,llGround(<128,128,0>-llGetPos())>, [FORCE_DIRECT_PATH, TRUE]); // have to move\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17713,7 +18267,38 @@
         },
         "name": "PU_FAILURE_NO_VALID_DESTINATION",
         "type": "integer",
-        "value": "6"
+        "value": "6",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_NO_VALID_DESTINATION)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17722,7 +18307,38 @@
         },
         "name": "PU_FAILURE_OTHER",
         "type": "integer",
-        "value": "1000000"
+        "value": "1000000",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_OTHER)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17731,7 +18347,38 @@
         },
         "name": "PU_FAILURE_TARGET_GONE",
         "type": "integer",
-        "value": "5"
+        "value": "5",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_TARGET_GONE)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17740,7 +18387,38 @@
         },
         "name": "PU_FAILURE_UNREACHABLE",
         "type": "integer",
-        "value": "4"
+        "value": "4",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_UNREACHABLE)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17749,7 +18427,38 @@
         },
         "name": "PU_GOAL_REACHED",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_GOAL_REACHED)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17758,7 +18467,38 @@
         },
         "name": "PU_SLOWDOWN_DISTANCE_REACHED",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_SLOWDOWN_DISTANCE_REACHED)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17767,7 +18507,38 @@
         },
         "name": "PU_FAILURE_NO_NAVMESH",
         "type": "integer",
-        "value": "9"
+        "value": "9",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_NO_NAVMESH)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17776,7 +18547,38 @@
         },
         "name": "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
         "type": "integer",
-        "value": "10"
+        "value": "10",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_PARCEL_UNREACHABLE",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17785,7 +18587,38 @@
         },
         "name": "PU_FAILURE_PARCEL_UNREACHABLE",
         "type": "integer",
-        "value": "11"
+        "value": "11",
+        "related":
+        [
+            "PU_SLOWDOWN_DISTANCE_REACHED",
+            "PU_GOAL_REACHED",
+            "PU_FAILURE_INVALID_START",
+            "PU_FAILURE_INVALID_GOAL",
+            "PU_FAILURE_UNREACHABLE",
+            "PU_FAILURE_TARGET_GONE",
+            "PU_FAILURE_NO_VALID_DESTINATION",
+            "PU_EVADE_HIDDEN",
+            "PU_EVADE_SPOTTED",
+            "PU_FAILURE_NO_NAVMESH",
+            "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+            "PU_FAILURE_OTHER",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "path_update(integer type, list reserved)\n{\n\tif (type == PU_FAILURE_PARCEL_UNREACHABLE)\n\t{\n\t\t; // do something\n\t}\n}"
+        ]
     },
     {
         "description":
@@ -17794,22 +18627,122 @@
         },
         "name": "TRAVERSAL_TYPE",
         "type": "integer",
-        "value": "7"
+        "value": "7",
+        "related":
+        [
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_FAST",
+            "TRAVERSAL_TYPE_NONE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llCreateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_SLOW]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_SLOW]);"
+        ]
     },
     {
         "name": "TRAVERSAL_TYPE_SLOW",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_FAST",
+            "TRAVERSAL_TYPE_NONE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llCreateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_SLOW]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_SLOW]);"
+        ]
     },
     {
         "name": "TRAVERSAL_TYPE_FAST",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_NONE",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llCreateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_FAST]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_FAST]);"
+        ]
     },
     {
         "name": "TRAVERSAL_TYPE_NONE",
         "type": "integer",
-        "value": "2"
+        "value": "2",
+        "related":
+        [
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_FAST",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llCreateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_NONE]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, integer type]);",
+            "llUpdateCharacter([TRAVERSAL_TYPE, TRAVERSAL_TYPE_NONE]);"
+        ]
     },
     {
         "description":
@@ -17818,21 +18751,59 @@
         },
         "name": "CHARACTER_AVOIDANCE_MODE",
         "type": "integer",
-        "value": "5"
-    },
-    {
-        "description":
-        {
-            "en_US": "Makes the character jump. Requires an additional parameter, the height to jump, between 0.1m and 2.0m. This must be provided as the first element of the llExecCharacterCmd option list."
-        },
-        "name": "CHARACTER_CMD_JUMP",
-        "type": "integer",
-        "value": "1"
-    },
-    {
-        "name": "CHARACTER_CMD_SMOOTH_STOP",
-        "type": "integer",
-        "value": "2"
+        "value": "5",
+        "related":
+        [
+            "CHARACTER_DESIRED_SPEED",
+            "CHARACTER_RADIUS",
+            "CHARACTER_LENGTH",
+            "CHARACTER_ORIENTATION",
+            "VERTICAL",
+            "HORIZONTAL",
+            "TRAVERSAL_TYPE",
+            "TRAVERSAL_TYPE_SLOW",
+            "TRAVERSAL_TYPE_FAST",
+            "TRAVERSAL_TYPE_NONE",
+            "CHARACTER_TYPE",
+            "CHARACTER_TYPE_NONE",
+            "CHARACTER_TYPE_A",
+            "CHARACTER_TYPE_B",
+            "CHARACTER_TYPE_C",
+            "CHARACTER_TYPE_D",
+            "AVOID_CHARACTERS",
+            "AVOID_DYNAMIC_OBSTACLES",
+            "AVOID_NONE",
+            "CHARACTER_MAX_ACCEL",
+            "CHARACTER_MAX_DECEL",
+            "CHARACTER_DESIRED_TURN_SPEED",
+            "CHARACTER_MAX_TURN_RADIUS",
+            "CHARACTER_MAX_SPEED",
+            "CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES",
+            "CHARACTER_STAY_WITHIN_PARCEL",
+            "llCreateCharacter",
+            "llDeleteCharacter",
+            "llEvade",
+            "llExecCharacterCmd",
+            "llGetClosestNavPoint",
+            "llFleeFrom",
+            "llNavigateTo",
+            "llPatrolPoints",
+            "llPursue",
+            "llUpdateCharacter",
+            "llWanderWithin",
+            "path_update"
+        ],
+        "usage":
+        [
+            "llCreateCharacter(list options);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_NONE]);",
+            "llCreateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);",
+            "llUpdateCharacter(list options);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, integer mode]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, AVOID_NONE]);",
+            "llUpdateCharacter([CHARACTER_AVOIDANCE_MODE, (AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES)]);"
+        ]
     },
     {
         "description":
@@ -17841,7 +18812,59 @@
         },
         "name": "CHARACTER_CMD_STOP",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "CHARACTER_CMD_JUMP",
+            "CHARACTER_CMD_SMOOTH_STOP",
+            "llExecCharacterCmd"
+        ],
+        "usage":
+        [
+            "llExecCharacterCmd(integer command, list options);",
+            "llExecCharacterCmd(CHARACTER_CMD_STOP, list options);",
+            "llExecCharacterCmd(CHARACTER_CMD_STOP, []);"
+        ]
+    },
+    {
+        "description":
+        {
+            "en_US": "Makes the character jump. Requires an additional parameter, the height to jump, between 0.1m and 2.0m. This must be provided as the first element of the llExecCharacterCmd option list."
+        },
+        "name": "CHARACTER_CMD_JUMP",
+        "type": "integer",
+        "value": "1",
+        "related":
+        [
+            "CHARACTER_CMD_STOP",
+            "CHARACTER_CMD_SMOOTH_STOP",
+            "llExecCharacterCmd"
+        ],
+        "usage":
+        [
+            "llExecCharacterCmd(integer command, list options);",
+            "llExecCharacterCmd(CHARACTER_CMD_JUMP, list options);",
+            "llExecCharacterCmd(CHARACTER_CMD_JUMP, [float height]);",
+            "llExecCharacterCmd(CHARACTER_CMD_JUMP, [0.1]);",
+            "llExecCharacterCmd(CHARACTER_CMD_JUMP, [2.0]);"
+        ]
+    },
+    {
+        "name": "CHARACTER_CMD_SMOOTH_STOP",
+        "type": "integer",
+        "value": "2",
+        "related":
+        [
+            "CHARACTER_CMD_STOP",
+            "CHARACTER_CMD_JUMP",
+            "llExecCharacterCmd"
+        ],
+        "usage":
+        [
+            "llExecCharacterCmd(integer command, list options);",
+            "llExecCharacterCmd(CHARACTER_CMD_SMOOTH_STOP, list options);",
+            "llExecCharacterCmd(CHARACTER_CMD_SMOOTH_STOP, []);"
+        ]
     },
     {
         "description":
@@ -17981,12 +19004,42 @@
     {
         "name": "GCNP_RADIUS",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "GCNP_STATIC",
+            "CHARACTER_TYPE",
+            "llGetClosestNavPoint"
+        ],
+        "usage":
+        [
+            "list nav_points = llGetClosestNavPoint(vector point, list options);",
+            "[vector nav_point] = llGetClosestNavPoint(vector point, list options) // if exists",
+            "[] = llGetClosestNavPoint(vector point, list options) // if no point",
+            "llGetClosestNavPoint(vector point, [GCNP_RADIUS, float distance, GCNP_STATIC, integer use_static_mesh, CHARACTER_TYPE, integer type]);",
+            "llGetClosestNavPoint(vector point, [GCNP_RADIUS, 20.0, GCNP_STATIC, FALSE, CHARACTER_TYPE, CHARACTER_TYPE_NONE]); // default",
+            "llGetClosestNavPoint(vector point, [GCNP_RADIUS, float distance]);"
+        ]
     },
     {
         "name": "GCNP_STATIC",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "GCNP_RADIUS",
+            "CHARACTER_TYPE",
+            "llGetClosestNavPoint"
+        ],
+        "usage":
+        [
+            "list nav_points = llGetClosestNavPoint(vector point, list options);",
+            "[vector nav_point] = llGetClosestNavPoint(vector point, list options) // if exists",
+            "[] = llGetClosestNavPoint(vector point, list options) // if no point",
+            "llGetClosestNavPoint(vector point, [GCNP_RADIUS, float distance, GCNP_STATIC, integer use_static_mesh, CHARACTER_TYPE, integer type]);",
+            "llGetClosestNavPoint(vector point, [GCNP_RADIUS, 20.0, GCNP_STATIC, FALSE, CHARACTER_TYPE, CHARACTER_TYPE_NONE]); // default",
+            "llGetClosestNavPoint(vector point, [GCNP_STATIC, integer use_static_mesh]);"
+        ]
     },
     {
         "description":
@@ -17995,7 +19048,24 @@
         },
         "name": "HORIZONTAL",
         "type": "integer",
-        "value": "1"
+        "value": "1",
+        "related":
+        [
+            "VERTICAL",
+            "llCreateCharacter",
+            "llUpdateCharacter"
+        ],
+        "usage":
+        [
+            "llCreateCharacter(list options);",
+            "llCreateCharacter([CHARACTER_ORIENTATION, integer orientation]);",
+            "llCreateCharacter([CHARACTER_ORIENTATION, VERTICAL]); // default",
+            "llCreateCharacter([CHARACTER_ORIENTATION, HORIZONTAL]);",
+            "llUpdateCharacter(list options);",
+            "llUpdateCharacter([CHARACTER_ORIENTATION, integer orientation]);",
+            "llUpdateCharacter([CHARACTER_ORIENTATION, VERTICAL]); // default",
+            "llUpdateCharacter([CHARACTER_ORIENTATION, HORIZONTAL]);"
+        ]
     },
     {
         "description":
@@ -18004,17 +19074,54 @@
         },
         "name": "VERTICAL",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "HORIZONTAL",
+            "llCreateCharacter",
+            "llUpdateCharacter"
+        ],
+        "usage":
+        [
+            "llCreateCharacter(list options);",
+            "llCreateCharacter([CHARACTER_ORIENTATION, integer orientation]);",
+            "llCreateCharacter([CHARACTER_ORIENTATION, VERTICAL]); // default",
+            "llCreateCharacter([CHARACTER_ORIENTATION, HORIZONTAL]);",
+            "llUpdateCharacter(list options);",
+            "llUpdateCharacter([CHARACTER_ORIENTATION, integer orientation]);",
+            "llUpdateCharacter([CHARACTER_ORIENTATION, VERTICAL]); // default",
+            "llUpdateCharacter([CHARACTER_ORIENTATION, HORIZONTAL]);"
+        ]
     },
     {
         "name": "PATROL_PAUSE_AT_WAYPOINTS",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "llPatrolPoints"
+        ],
+        "usage":
+        [
+            "llPatrolPoints(list patrolPoints, list options); // patrolPoints must contain at least two vectors",
+            "llPatrolPoints([vector pointA, vector pointB], [PATROL_PAUSE_AT_WAYPOINTS, integer boolean]);",
+            "llPatrolPoints([vector pointA, vector pointB], [PATROL_PAUSE_AT_WAYPOINTS, FALSE]); // default"
+        ]
     },
     {
         "name": "WANDER_PAUSE_AT_WAYPOINTS",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "llWanderWithin"
+        ],
+        "usage":
+        [
+            "llWanderWithin(vector origin, vector distrance, list options);",
+            "llWanderWithin(vector origin, vector distrance, [WANDER_PAUSE_AT_WAYPOINTS, integer boolean]);",
+            "llWanderWithin(vector origin, vector distrance, [WANDER_PAUSE_AT_WAYPOINTS, FALSE]); // default"
+        ]
     },
     {
         "description":
@@ -18037,11 +19144,22 @@
     {
         "description":
         {
-            "en_US": "Returns the percentage of pathfinding characters skipped each frame, averaged over the last minute.\nThe returned value corresponds to the \"Characters Updated\" stat in the viewer's Statistics Bar."
+            "en_US": "Returns the percentage of pathfinding characters updated each frame, averaged over the last minute.\nThe returned value corresponds to the \"Characters Updated\" stat in the viewer's Statistics Bar."
         },
         "name": "SIM_STAT_PCT_CHARS_STEPPED",
         "type": "integer",
-        "value": "0"
+        "value": "0",
+        "related":
+        [
+            "llGetSimStats"
+        ],
+        "usage":
+        [
+            "float statistic = llGetSimStats(integer stat_type);",
+            "float statistic = llGetSimStats(SIM_STAT_PCT_CHARS_STEPPED);",
+            "0.0 = llGetSimStats(SIM_STAT_PCT_CHARS_STEPPED); // min possible return",
+            "100.0 = llGetSimStats(SIM_STAT_PCT_CHARS_STEPPED); // max possible return"
+        ]
     },
     {
         "description":
@@ -18083,7 +19201,26 @@
         },
         "name": "OBJECT_PHYSICS",
         "type": "integer",
-        "value": "21"
+        "value": "21",
+        "related":
+        [
+            "PRIM_PHYSICS",
+            "STATUS_PHYSICS",
+            "llGetLinkPrimitiveParams",
+            "llGetObjectDetails",
+            "llGetPrimitiveParams",
+            "llGetStatus",
+            "llSetLinkPrimitiveParams",
+            "llSetLinkPrimitiveParamsFast",
+            "llSetPrimitiveParams",
+            "llSetStatus"
+        ],
+        "usage":
+        [
+            "list llGetObjectDetails(key id, list params);",
+            "[integer boolean] = llGetObjectDetails(key id, [OBJECT_PHYSICS]);",
+            "[FALSE] = llGetObjectDetails(key id, [OBJECT_PHYSICS]); // for avatars or attachments"
+        ]
     },
     {
         "description":
@@ -18092,7 +19229,26 @@
         },
         "name": "OBJECT_PHANTOM",
         "type": "integer",
-        "value": "22"
+        "value": "22",
+        "related":
+        [
+            "PRIM_PHANTOM",
+            "STATUS_PHANTOM",
+            "llGetLinkPrimitiveParams",
+            "llGetObjectDetails",
+            "llGetPrimitiveParams",
+            "llGetStatus",
+            "llSetLinkPrimitiveParams",
+            "llSetLinkPrimitiveParamsFast",
+            "llSetPrimitiveParams",
+            "llSetStatus"
+        ],
+        "usage":
+        [
+            "list llGetObjectDetails(key id, list params);",
+            "[integer boolean] = llGetObjectDetails(key id, [OBJECT_PHANTOM]);",
+            "[FALSE] = llGetObjectDetails(key id, [OBJECT_PHANTOM]); // for avatars or attachments"
+        ]
     },
     {
         "description":
@@ -18101,17 +19257,63 @@
         },
         "name": "OBJECT_TEMP_ON_REZ",
         "type": "integer",
-        "value": "23"
+        "value": "23",
+        "related":
+        [
+            "PRIM_TEMP_ON_REZ",
+            "llGetLinkPrimitiveParams",
+            "llGetObjectDetails",
+            "llGetPrimitiveParams",
+            "llSetLinkPrimitiveParams",
+            "llSetLinkPrimitiveParamsFast",
+            "llSetPrimitiveParams"
+        ],
+        "usage":
+        [
+            "list llGetObjectDetails(key id, list params);",
+            "[integer boolean] = llGetObjectDetails(key id, [OBJECT_TEMP_ON_REZ]);"
+        ]
     },
     {
         "name": "JSON_APPEND",
         "type": "integer",
-        "value": "-1"
+        "value": "-1",
+        "related":
+        [
+            "llJsonSetValue"
+        ],
+        "usage":
+        [
+            "string llJsonSetValue(string json, list specifiers, string value);",
+            "string llJsonSetValue(string json, [JSON_APPEND], string value); // append to json if array, else replace json with array and value as its first value",
+            "string llJsonSetValue(string json, list specifiers + [JSON_APPEND], string value); // append to json at specifiers if array, else replace json at specifiers with array and value as its first value"
+        ]
     },
     {
         "name": "OBJECT_RETURN_PARCEL",
         "type": "integer",
-        "value": "0x1"
+        "value": "0x1",
+        "related":
+        [
+            "ERR_GENERIC",
+            "ERR_PARCEL_PERMISSIONS",
+            "ERR_MALFORMED_PARAMS",
+            "ERR_RUNTIME_PERMISSIONS",
+            "ERR_THROTTLED",
+            "OBJECT_RETURN_PARCEL_OWNER",
+            "OBJECT_RETURN_REGION",
+            "PERMISSION_RETURN_OBJECTS",
+            "llGetPermissions",
+            "llGetPermissionsKey",
+            "llRequestPermissions",
+            "llReturnObjectsByID",
+            "llReturnObjectsByOwner"
+        ],
+        "usage":
+        [
+            "integer llReturnObjectsByOwner(key owner, integer scope); // returns number of returned objects or an error flag",
+            "integer llReturnObjectsByOwner(key owner, OBJECT_RETURN_PARCEL);"
+        ]
     },
     {
         "name": "OBJECT_RETURN_PARCEL_OWNER",
@@ -18126,7 +19328,30 @@
     {
         "name": "ERR_GENERIC",
         "type": "integer",
-        "value": "-1"
+        "value": "-1",
+        "related":
+        [
+            "ERR_PARCEL_PERMISSIONS",
+            "ERR_MALFORMED_PARAMS",
+            "ERR_RUNTIME_PERMISSIONS",
+            "ERR_THROTTLED",
+            "OBJECT_RETURN_PARCEL",
+            "OBJECT_RETURN_PARCEL_OWNER",
+            "OBJECT_RETURN_REGION",
+            "PERMISSION_RETURN_OBJECTS",
+            "llGetPermissions",
+            "llGetPermissionsKey",
+            "llRequestPermissions",
+            "llReturnObjectsByID",
+            "llReturnObjectsByOwner"
+        ],
+        "usage":
+        [
+            "integer llReturnObjectsByOwner(key owner, integer scope); // returns number of returned objects or an error flag",
+            "integer llReturnObjectsByID(list objects); // returns number of returned objects or an error flag",
+            "ERR_GENERIC = llReturnObjectsByOwner(key owner, integer scope);",
+            "ERR_GENERIC = llReturnObjectsByID(list objects);"
+        ]
     },
     {
         "name": "ERR_PARCEL_PERMISSIONS",
@@ -18401,32 +19626,92 @@
     {
         "description":
         {
-            "en_US": "Used with llPassTouches to only pass touches to the root if the touch event was not handled."
+            "en_US": "Used with llPass{Collisions, Touches} to only pass {collisions, touches} to the root if the touch event was not handled."
         },
         "name": "PASS_IF_NOT_HANDLED",
         "type": "integer",
         "value": "0",
+        "related":
+        [
+            "PASS_ALWAYS",
+            "PASS_NEVER",
+            "llPassCollisions",
+            "llPassTouches",
+            "collision_start",
+            "collision",
+            "collision_end",
+            "touch_start",
+            "touch",
+            "touch_end"
+        ],
+        "usage":
+        [
+            "llPassCollisions(integer pass);",
+            "llPassCollisions(PASS_IF_NOT_HANDLED);",
+            "llPassTouches(integer pass);",
+            "llPassTouches(PASS_IF_NOT_HANDLED);"
+        ],
         "version": "1.40.0"
     },
     {
         "description":
         {
-            "en_US": "Used with llPassTouches to always pass touches to the root regardless of whether the touch event was handled or not."
+            "en_US": "Used with llPass{Collisions, Touches} to always pass {collisions, touches} to the root regardless of whether the touch event was handled or not."
         },
         "name": "PASS_ALWAYS",
         "type": "integer",
         "value": "1",
+        "related":
+        [
+            "PASS_IF_NOT_HANDLED",
+            "PASS_NEVER",
+            "llPassCollisions",
+            "llPassTouches",
+            "collision_start",
+            "collision",
+            "collision_end",
+            "touch_start",
+            "touch",
+            "touch_end"
+        ],
+        "usage":
+        [
+            "llPassCollisions(integer pass);",
+            "llPassCollisions(PASS_ALWAYS);",
+            "llPassTouches(integer pass);",
+            "llPassTouches(PASS_ALWAYS);"
+        ],
         "version": "1.40.0"
     },
     {
         "description":
         {
-            "en_US": "Used with llPassTouches to never pass touches to the root."
+            "en_US": "Used with llPass{Collisions, Touches} to never pass {collisions, touches} to the root."
         },
         "name": "PASS_NEVER",
         "type": "integer",
         "value": "2",
-        "version": "1.40.0"
+        "related":
+        [
+            "PASS_IF_NOT_HANDLED",
+            "PASS_ALWAYS",
+            "llPassCollisions",
+            "llPassTouches",
+            "collision_start",
+            "collision",
+            "collision_end",
+            "touch_start",
+            "touch",
+            "touch_end"
+        ],
+        "usage":
+        [
+            "llPassCollisions(integer pass);",
+            "llPassCollisions(PASS_NEVER);",
+            "llPassTouches(integer pass);",
+            "llPassTouches(PASS_NEVER);"
+        ],
+        "version": "1.40.2"
     },
     {
         "name": "OBJECT_PRIM_COUNT",
