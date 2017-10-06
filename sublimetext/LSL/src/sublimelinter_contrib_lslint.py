@@ -27,9 +27,9 @@ class Lslint(Linter):
     syntax = ('lsl')
     cmd = 'lslint -i'
     executable = 'lslint'
-    version_args = '-V'
+    version_args = '--version'
     version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.0.5'
+    version_requirement = '>= 1.0.6'
     regex = r'''(?xi)
         (?:(?P<warning> WARN)|(?P<error>ERROR))\:\:\s
         \(\s*(?P<line>\d+),\s*(?P<col>\d+)\)\:\s
